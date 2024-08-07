@@ -1,0 +1,25 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #6082F9;
+    margin: 0;
+  }
+ 
+  header {
+      background-color: #34377B;
+      width: 100%;
+      height: 20%;
+  }
+  h1 {
+      color: #EABE3F;
+      font-family: "Courier Prime", monospace;
+      font-weight: 500;
+      font-size: 80px;
+      font-style: normal;
+      text-align: right;
+      transform: translateY(-155px);
+    }
+
+    .on {
+        background-image: image();
+    }
