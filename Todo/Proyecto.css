@@ -20,6 +20,22 @@ body {
       transform: translateY(-155px);
     }
 
-    .on {
-        background-image: image();
+    .Menu1 {
+    width: 15%;
+      height: 5vw;
+      transform: translateY(-155px); 
+    
+
     }
+    .Menu2 {
+        width: 15%;
+        height: 5vw;
+        transform: translateY(-90px);
+    }
+    .Menu3 {
+        width: 15%;
+        height: 5vw;
+        transform: translateY(-20px);
+    }
+    
+    
