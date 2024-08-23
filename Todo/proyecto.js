@@ -1,7 +1,19 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const powerButton = document.getElementById('powerButton');
+document.getElementById("Boton").addEventListener("click", function() {
+    this.classList.toggle("green");
+    this.classList.toggle("red");
+});
 
-    powerButton.addEventListener('click', () => {
-        powerButton.classList.toggle('on');
-    });
+document.getElementById("Boton1").addEventListener("click", function() {
+    this.classList.toggle("green");
+    this.classList.toggle("red");
+});
+
+document.getElementById("Boton2").addEventListener("click", function() {
+    this.classList.toggle("green");
+    this.classList.toggle("red");
+});
+
+document.getElementById("Boton3").addEventListener("click", function() {
+    this.classList.toggle("green");
+    this.classList.toggle("red");
 });
