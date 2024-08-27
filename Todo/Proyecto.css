@@ -34,7 +34,7 @@ body {
       display: flex;
       transform: translateY(350px);
       position: relative; 
-      left: 20vw
+      left: 5vw
 
     }
     .Menu2 {
@@ -42,7 +42,7 @@ body {
         height: 5vw;
         transform: translateY(-60px);
         position: relative; 
-        left: 20vw
+        left: 5vw
         
     }
     .Menu3 {
@@ -51,6 +51,33 @@ body {
         transform: translateY(20px);
         position: relative; 
       left: 5vw
+    }
+
+    .Menu4 {
+      width: 15%;
+      height: 5vw;
+      display: flex;
+      transform: translateY(-66px);
+      position: relative; 
+      left: 25vw
+    }
+
+    .Menu5 {
+      width: 15%;
+      height: 5vw;
+      display: flex;
+      transform: translateY(-317px);
+      position: relative; 
+      left: 25vw
+    }
+
+    .Menu6 {
+      width: 15%;
+      height: 5vw;
+      display: flex;
+      transform: translateY(-80px);
+      position: relative; 
+      left: 25vw
     }
 
     .Boton {
@@ -63,13 +90,13 @@ body {
       align-items: center;
       cursor: pointer;
       transition: background-color 0.3s ease;
-      transform: translateY(-230px);
+      transform: translateY(-490px);
       position: relative; 
       left: 45vw
   }
   
   
-  .power-icon {
+  .icon {
       fill: rgb(0, 0, 0);
       width: 80px;
       height: 80px;
@@ -87,14 +114,14 @@ body {
     align-items: center;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    transform: translateY(-190px);
+    transform: translateY(-440px);
     position: relative; 
     left: 45vw
 }
 
 
 
-.power-icon {
+.icon {
     fill: rgb(0, 0, 0);
     width: 80px;
     height: 80px;
@@ -110,14 +137,14 @@ body {
   align-items: center;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  transform: translateY(-150px);
+  transform: translateY(-390px);
   position: relative; 
   left: 45vw
 }
 
 
 
-.power-icon {
+.icon {
   fill: rgb(0, 0, 0);
   width: 80px;
   height: 80px;
@@ -133,24 +160,45 @@ body {
   align-items: center;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  transform: translateY(-110px);
+  transform: translateY(-340px);
   position: relative; 
   left: 45vw
 }
 
 
-.power-icon {
+.icon {
   fill: rgb(0, 0, 0);
   width: 80px;
   height: 80px;
 }
 
 .input{
-  width: 5%;
-  height: 5vw;
-  transform: translateY(-150px);
+  width: 50px;
+  height: 70px;
+  transform: translateY(-400px);
   position: relative; 
   left: 70vw
   
+  }
+
+  .color-palette {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-gap: 10px;
+    transform: translateY(-800px);
+    position: relative; 
+    left: 65vw
 }
 
+.color-btn {
+    width: 60px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    border-radius: 50%;
+}
+
+.color-btn:hover {
+    transform: scale(1.1);
+}
