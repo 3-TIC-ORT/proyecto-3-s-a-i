@@ -183,22 +183,211 @@ body {
 
   .color-paleta {
     display: grid;
-    grid-template-columns: repeat(4, 60px);
+    grid-template-columns: repeat(4, 60px); /* 4 columnas de 60px de ancho */
+    grid-template-rows: repeat(4, 60px);    /* 4 filas de 60px de alto, ajusta este valor */
     grid-gap: 10px;
     transform: translateY(-800px);
-    position: relative; 
-    left: 65vw
+    position: relative;
+    left: 65vw;
 }
 
 .color-btn {
-    width: 60px;
-    height: 60px;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-    border-radius: 50%;
+  width: 80px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border-radius: 0; /* Asegura que el botón sea un cuadrado */
 }
 
 .color-btn:hover {
     transform: scale(1.1);
+}
+
+.color-btn1 {
+  width: 90px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border-radius: 0;
+  transform: translateY(-10px);
+  position: relative;
+  left: 0vw;
+
+}
+.color-btn2 {
+  width: 90px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border-radius: 0;
+  transform: translateY(130px);
+  position: relative;
+  left: -5.3vw;
+
+}
+.color-btn3 {
+  width: 90px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border-radius: 0;
+  transform: translateY(270px);
+  position: relative;
+  left: -10.6vw;
+  
+
+}
+.color-btn4 {
+  width: 90px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border-radius: 0;
+  transform: translateY(60px);
+  position: relative;
+  left: -12vw;
+
+}
+.color-btn5 {
+  width: 90px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border-radius: 0;
+  transform: translateY(130px);
+  position: relative;
+  left: 4vw;
+
+}
+.color-btn6 {
+  width: 90px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border-radius: 0;
+  transform: translateY(-80px);
+  position: relative;
+  left: 3vw;
+
+}
+.color-btn7 {
+  width: 80px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border-radius: 0;
+
+}
+.color-btn8 {
+  width: 80px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border-radius: 0;
+
+}
+.color-btn9 {
+  width: 80px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border-radius: 0;
+
+}
+.color-btn10 {
+  width: 80px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border-radius: 0;
+
+}
+.color-btn11 {
+  width: 90px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border-radius: 0;
+  transform: translateY(-150px);
+  position: relative;
+  left: 6vw;
+
+}
+.color-btn12 {
+  width: 80px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border-radius: 0;
+
+}
+.color-btn13 {
+  width: 80px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border-radius: 0;
+
+}
+.color-btn14 {
+  width: 80px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border-radius: 0;
+
+}
+.color-btn15 {
+  width: 80px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border-radius: 0;
+
+}
+.color-btn16 {
+  width: 90px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border-radius: 0;
+  transform: translateY(-220px);
+  position: relative;
+  left: 9vw;
+
+}
+.color-btn17 {
+  width: 80px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border-radius: 0;
+
+}
+.color-btn18 {
+  width: 80px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border-radius: 0;
+
 }
