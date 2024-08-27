@@ -92,7 +92,7 @@ body {
       transition: background-color 0.3s ease;
       transform: translateY(-490px);
       position: relative; 
-      left: 45vw
+      left: 49vw
   }
   
   
@@ -116,7 +116,7 @@ body {
     transition: background-color 0.3s ease;
     transform: translateY(-440px);
     position: relative; 
-    left: 45vw
+    left: 49vw
 }
 
 
@@ -139,7 +139,7 @@ body {
   transition: background-color 0.3s ease;
   transform: translateY(-390px);
   position: relative; 
-  left: 45vw
+  left: 49vw
 }
 
 
@@ -162,7 +162,7 @@ body {
   transition: background-color 0.3s ease;
   transform: translateY(-340px);
   position: relative; 
-  left: 45vw
+  left: 49vw
 }
 
 
@@ -181,7 +181,7 @@ body {
   
   }
 
-  .color-palette {
+  .color-paleta {
     display: grid;
     grid-template-columns: repeat(4, 60px);
     grid-gap: 10px;
