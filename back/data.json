@@ -1,0 +1,22 @@
+[{
+    "nombre":"a1",
+    "function":"setdevice"
+},{
+    "nombre":"p1",
+    "function":"setvolume"
+},{
+    "nombre":"p2",
+    "function":"setdevice"
+},{
+    "nombre":"p3",
+    "function":"setdevice"
+},{
+    "nombre":"b1",
+    "function":"mute"
+},{
+    "nombre":"b2",
+    "function":"setdevice"
+},{
+    "nombre":"b3",
+    "function":"setdevice"
+}]
