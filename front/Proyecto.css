@@ -92,7 +92,7 @@ body {
       transition: background-color 0.3s ease;
       transform: translateY(-490px);
       position: relative; 
-      left: 49vw
+      left: 53vw
   }
   
   
@@ -116,7 +116,7 @@ body {
     transition: background-color 0.3s ease;
     transform: translateY(-440px);
     position: relative; 
-    left: 49vw
+    left: 53vw
 }
 
 
@@ -139,7 +139,7 @@ body {
   transition: background-color 0.3s ease;
   transform: translateY(-390px);
   position: relative; 
-  left: 49vw
+  left: 53vw
 }
 
 
@@ -162,7 +162,7 @@ body {
   transition: background-color 0.3s ease;
   transform: translateY(-340px);
   position: relative; 
-  left: 49vw
+  left: 53vw
 }
 
 
@@ -175,9 +175,9 @@ body {
 .input{
   width: 50px;
   height: 70px;
-  transform: translateY(-400px);
+  transform: translateY(-370px);
   position: relative; 
-  left: 70vw
+  left: 75vw
   
   }
 
@@ -278,39 +278,51 @@ body {
 
 }
 .color-btn7 {
-  width: 80px;
+  width: 90px;
   height: 60px;
   border: none;
   cursor: pointer;
   transition: transform 0.2s ease;
   border-radius: 0;
+  transform: translateY(60px);
+  position: relative;
+  left: -2.5vw;
 
 }
 .color-btn8 {
-  width: 80px;
+  width: 90px;
   height: 60px;
   border: none;
   cursor: pointer;
   transition: transform 0.2s ease;
   border-radius: 0;
+  transform: translateY(200px);
+  position: relative;
+  left: -7.5vw;
 
 }
 .color-btn9 {
-  width: 80px;
+  width: 90px;
   height: 60px;
   border: none;
   cursor: pointer;
   transition: transform 0.2s ease;
   border-radius: 0;
+  transform: translateY(-80px);
+  position: relative;
+  left: 12.5vw;
 
 }
 .color-btn10 {
-  width: 80px;
+  width: 90px;
   height: 60px;
   border: none;
   cursor: pointer;
   transition: transform 0.2s ease;
   border-radius: 0;
+  transform: translateY(60px);
+  position: relative;
+  left: 7vw;
 
 }
 .color-btn11 {
@@ -326,39 +338,51 @@ body {
 
 }
 .color-btn12 {
-  width: 80px;
+  width: 90px;
   height: 60px;
   border: none;
   cursor: pointer;
   transition: transform 0.2s ease;
   border-radius: 0;
+  transform: translateY(-10px);
+  position: relative;
+  left: 0.5vw;
 
 }
 .color-btn13 {
-  width: 80px;
+  width: 90px;
   height: 60px;
   border: none;
   cursor: pointer;
   transition: transform 0.2s ease;
   border-radius: 0;
+  transform: translateY(60px);
+  position: relative;
+  left: 16.8vw;
 
 }
 .color-btn14 {
-  width: 80px;
+  width: 90px;
   height: 60px;
   border: none;
   cursor: pointer;
   transition: transform 0.2s ease;
   border-radius: 0;
+  transform: translateY(-150px);
+  position: relative;
+  left: 15.5vw;
 
 }
 .color-btn15 {
-  width: 80px;
+  width: 90px;
   height: 60px;
   border: none;
   cursor: pointer;
   transition: transform 0.2s ease;
   border-radius: 0;
+  transform: translateY(-10px);
+  position: relative;
+  left: 10vw;
 
 }
 .color-btn16 {
@@ -374,20 +398,61 @@ body {
 
 }
 .color-btn17 {
-  width: 80px;
+  width: 90px;
   height: 60px;
   border: none;
   cursor: pointer;
   transition: transform 0.2s ease;
   border-radius: 0;
+  transform: translateY(-150px);
+  position: relative;
+  left: 25vw;
 
 }
 .color-btn18 {
-  width: 80px;
+  width: 90px;
   height: 60px;
   border: none;
   cursor: pointer;
   transition: transform 0.2s ease;
   border-radius: 0;
+  transform: translateY(-10px);
+  position: relative;
+  left: 19.7vw;
 
+}
+
+.t1{
+  font-family: "Courier Prime", monospace;
+  font-weight: 100;
+ font-size: 3vh;
+  transform: translateY(-1223px);
+  position: relative;
+  left: 52vw;
+}
+.t2{
+  font-family: "Courier Prime", monospace;
+  font-weight: 100;
+ font-size: 3vh;
+  transform: translateY(-1140px);
+  position: relative;
+  left: 52vw;
+}
+
+.t3{
+  font-family: "Courier Prime", monospace;
+  font-weight: 100;
+ font-size: 3vh;
+  transform: translateY(-1060px);
+  position: relative;
+  left: 51vw;
+}
+
+.t4{
+  font-family: "Courier Prime", monospace;
+  font-weight: 100;
+ font-size: 3vh;
+  transform: translateY(-980px);
+  position: relative;
+  left: 50vw;
 }
