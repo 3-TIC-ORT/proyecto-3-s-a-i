@@ -1,22 +1,22 @@
 [{
     "nombre":"a1",
-    "function":"setdevice"
+    "funcion":"setdevice"
 },{
     "nombre":"p1",
-    "function":"setvolume"
+    "funcion":"setvolume"
 },{
     "nombre":"p2",
-    "function":"setdevice"
+    "funcion":"setdevice"
 },{
     "nombre":"p3",
-    "function":"setdevice"
+    "funcion":"setdevice"
 },{
     "nombre":"b1",
-    "function":"mute"
+    "funcion":"mute"
 },{
     "nombre":"b2",
-    "function":"setdevice"
+    "funcion":"setdevice"
 },{
     "nombre":"b3",
-    "function":"setdevice"
+    "funcion":"setdevice"
 }]
