@@ -1,22 +1,29 @@
 [{
     "nombre":"a1",
-    "funcion":"setdevice"
+    "funcion":"setdevice",
+    "appdata":"null"
 },{
     "nombre":"p1",
-    "funcion":"setvolume"
+    "funcion":"setvolume",
+    "appdata":"null"
 },{
     "nombre":"p2",
-    "funcion":"setdevice"
+    "funcion":"setappvolume",
+    "appdata":"Spotify.exe"
 },{
     "nombre":"p3",
-    "funcion":"setdevice"
+    "funcion":"setbrightnes",
+    "appdata":"null"
 },{
     "nombre":"b1",
-    "funcion":"mute"
+    "funcion":"mute",
+    "appdata":"null"
 },{
     "nombre":"b2",
-    "funcion":"setdevice"
+    "funcion":"mutemic",
+    "appdata":"null"
 },{
     "nombre":"b3",
-    "funcion":"setdevice"
+    "funcion":"muteapp",
+    "appdata":"Spotify.exe"
 }]

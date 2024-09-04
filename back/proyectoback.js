@@ -3,20 +3,36 @@ import { fileURLToPath } from 'node:url';
 import { dirname,join } from 'node:path';
 import { exec } from 'child_process';
 import  fs  from 'fs';
+import {startServer,onEvent} from 'soquetic'
 
-const puerto=new SerialPort({path:'COM4',baudRate:9600});
+const puerto=new SerialPort({path:'COM5',baudRate:9600});
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const nirpath = join(__dirname,"/nircmd/nircmd.exe");
 
 let funciones={
     mute:mute,
+    mutemic:mutemic,
+    muteapp:muteapp,
     setdevice:setdevice,
     setvolume:setvolume,
+    setappvolume:setappvolume,
     setbrightnes:setbrightnes
 };
 function mute(numP){
     if(numP===1){
     let comand = nirpath+" mutesysvolume 2";
+    exec(comand);
+    };
+};
+function muteapp(numP,app){
+    if(numP===1){
+    let comand = nirpath+" muteappvolume "+app+" 2";
+    exec(comand);
+    };
+};
+function mutemic(numP){
+    if(numP===1){
+    let comand = nirpath+" mutesysvolume 2 microphone";
     exec(comand);
     };
 };
@@ -53,6 +69,16 @@ function setbrightnes(numP){
     setbrightnesstate=numP;
     };
 };
+let setappvolumestate=0;
+function setappvolume(numP,app){
+    if(setappvolumestate!=numP){
+    let valorcomand=Number(math.round((numP/maxpot)*maxvolumen));
+    let comand = nirpath+" setappvolume "+app+" "+valorcomand;
+    exec(comand);
+    setvolumestate=numP;
+    };
+};
+
 
 function CategorizadorS(txt){
 let sensores=['a1','p1','p2','p3','b1','b2','b3'];
@@ -63,7 +89,11 @@ let sensores=['a1','p1','p2','p3','b1','b2','b3'];
         let Fc=JSON.parse(fs.readFileSync('data.json','utf-8'));
             for(let I=0;I<Fc.length;I++){
                 if(Fc[I].nombre===sensor){
-                funciones[`${Fc[I].funcion}`](num);
+                    if(Fc[I].nombre.includes("app")){
+                    funciones[`${Fc[I].funcion}`](num,`${Fc[I].appdata}`);
+                    }else{
+                    funciones[`${Fc[I].funcion}`](num);
+                    };
                 };
             };
         };
@@ -71,7 +101,11 @@ let sensores=['a1','p1','p2','p3','b1','b2','b3'];
 };
 
 
-puerto.on('data',function(data){
+puerto.on('data',(data)=>{
     let texto=Buffer.from(data, 'hex').toString('utf-8');
     CategorizadorS(texto);
 });
+onEvent("funciones",(data)=>{
+    fs.writeFileSync("data.json",JSON.stringify(data));
+});
+startServer();
