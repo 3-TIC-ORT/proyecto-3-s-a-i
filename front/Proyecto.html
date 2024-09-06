@@ -106,6 +106,22 @@
     <h2 class="t4">Desplazamiento</h2>
 
 
+    <div class="color-picker"></div>
+        <div id="color-indicator" class="color-indicator"></div>
+        <div id="color-picker"></div>
+          
+        <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+        <script>
+          let colorIndicator = document.getElementById('color-indicator');
+          const colorPicker = new iro.ColorPicker("#color-picker" , {
+            width:180, color: "#fff"
+          });
+          colorPicker.on('color:change' , function(color) {
+            colorIndicator.style.backgroundColor = color.hexString;
+          });
+        </script>
+
+
     
 </body>
 </html>

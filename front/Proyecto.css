@@ -66,7 +66,7 @@ body {
       width: 15%;
       height: 5vw;
       display: flex;
-      transform: translateY(-317px);
+      transform: translateY(-308px);
       position: relative; 
       left: 25vw
     }
@@ -75,7 +75,7 @@ body {
       width: 15%;
       height: 5vw;
       display: flex;
-      transform: translateY(-80px);
+      transform: translateY(-70px);
       position: relative; 
       left: 25vw
     }
@@ -214,5 +214,29 @@ body {
   transform: translateY(-640px);
   position: relative;
   left: 50vw;
+}
+
+.color-picker{
+  position: relative;
+
+}
+
+.color-indicator{
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 20px;
+  vertical-align: middle;
+
+}
+
+#color-picker{
+  display:inline-block;
+  vertical-align: middle;
+  margin-left: 40px;
+  transform: translateY(-950px);
+  position: relative;
+  left: 55vw;
 }
 
