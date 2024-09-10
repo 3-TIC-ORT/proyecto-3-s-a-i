@@ -96,7 +96,7 @@ body {
   }
   
   
-  .icon {
+  .icono {
       fill: rgb(0, 0, 0);
       width: 80px;
       height: 80px;
@@ -121,7 +121,7 @@ body {
 
 
 
-.icon {
+.icono {
     fill: rgb(0, 0, 0);
     width: 80px;
     height: 80px;
@@ -144,7 +144,7 @@ body {
 
 
 
-.icon {
+.icono {
   fill: rgb(0, 0, 0);
   width: 80px;
   height: 80px;
@@ -166,7 +166,7 @@ body {
 }
 
 
-.icon {
+.icono {
   fill: rgb(0, 0, 0);
   width: 80px;
   height: 80px;
@@ -178,8 +178,8 @@ body {
   transform: translateY(-370px);
   position: relative; 
   left: 75vw
-  
-  }
+   }
+   
 
 .t1{
   font-family: "Courier Prime", monospace;
@@ -223,20 +223,24 @@ body {
 
 .color-indicator{
   display: inline-block;
-  width: 200px;
+  width: 50px;
   height: 200px;
   background-color: #fff;
   border-radius: 20px;
   vertical-align: middle;
+  transform: translateY(-910px);
+  position: relative;
+  left: 88vw;
 
 }
 
 #color-picker{
+  transform: scale();
   display:inline-block;
   vertical-align: middle;
   margin-left: 40px;
-  transform: translateY(-950px);
+  transform: translateY(-910px);
   position: relative;
-  left: 55vw;
+  left: 65vw;
 }
 
