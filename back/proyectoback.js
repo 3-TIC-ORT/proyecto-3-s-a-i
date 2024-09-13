@@ -54,7 +54,7 @@ let maxpot=1023;
 let setvolumestate=0;
 function setvolume(numP){
     if(setvolumestate!=numP){
-    let valorcomand=Number(math.round((numP/maxpot)*maxvolumen));
+    let valorcomand=Number(Math.round((numP/maxpot)*maxvolumen));
     let comand = nirpath+" setsysvolume "+valorcomand;
     exec(comand);
     setvolumestate=numP;
@@ -63,8 +63,8 @@ function setvolume(numP){
 let setbrightnesstate=0;
 function setbrightnes(numP){
     if(setbrightnesstate!=numP){
-    let valorcomand=Number(math.round((numP/maxpot)*100));
-    let comand=nirpath+" setbrigtnes "+valorcomand;
+    let valorcomand=Number(Math.round((numP/maxpot)*100));
+    let comand=nirpath+" setbrigtness "+valorcomand;
     exec(comand);
     setbrightnesstate=numP;
     };
@@ -72,7 +72,7 @@ function setbrightnes(numP){
 let setappvolumestate=0;
 function setappvolume(numP,app){
     if(setappvolumestate!=numP){
-    let valorcomand=Number(math.round((numP/maxpot)*maxvolumen));
+    let valorcomand=Number(Math.round((numP/maxpot)*maxvolumen));
     let comand = nirpath+" setappvolume "+app+" "+valorcomand;
     exec(comand);
     setvolumestate=numP;
@@ -105,7 +105,12 @@ puerto.on('data',(data)=>{
     let texto=Buffer.from(data, 'hex').toString('utf-8');
     CategorizadorS(texto);
 });
-onEvent("funciones",(data)=>{
-    fs.writeFileSync("data.json",JSON.stringify(data));
+onEvent("funciones",()=>{
+    let sensores=JSON.parse(fs.readFileSync("data.json","utf-8"));
+    return sensores;
 });
-startServer();
+onEvent("corregir",(correccion)=>{
+    fs.writeFileSync("data.json",JSON.stringify(correccion,null,2));
+    return  "correción hecha";
+});
+startServer(3000);
