@@ -66,7 +66,7 @@ body {
       width: 15%;
       height: 5vw;
       display: flex;
-      transform: translateY(-317px);
+      transform: translateY(-308px);
       position: relative; 
       left: 25vw
     }
@@ -75,7 +75,7 @@ body {
       width: 15%;
       height: 5vw;
       display: flex;
-      transform: translateY(-80px);
+      transform: translateY(-70px);
       position: relative; 
       left: 25vw
     }
@@ -96,7 +96,7 @@ body {
   }
   
   
-  .icon {
+  .icono {
       fill: rgb(0, 0, 0);
       width: 80px;
       height: 80px;
@@ -121,7 +121,7 @@ body {
 
 
 
-.icon {
+.icono {
     fill: rgb(0, 0, 0);
     width: 80px;
     height: 80px;
@@ -144,7 +144,7 @@ body {
 
 
 
-.icon {
+.icono {
   fill: rgb(0, 0, 0);
   width: 80px;
   height: 80px;
@@ -166,7 +166,7 @@ body {
 }
 
 
-.icon {
+.icono {
   fill: rgb(0, 0, 0);
   width: 80px;
   height: 80px;
@@ -178,255 +178,14 @@ body {
   transform: translateY(-370px);
   position: relative; 
   left: 75vw
-  
-  }
-
-  .color-paleta {
-    display: grid;
-    grid-template-columns: repeat(4, 60px); /* 4 columnas de 60px de ancho */
-    grid-template-rows: repeat(4, 60px);    /* 4 filas de 60px de alto, ajusta este valor */
-    grid-gap: 10px;
-    transform: translateY(-800px);
-    position: relative;
-    left: 65vw;
-}
-
-.color-btn {
-  width: 80px;
-  height: 60px;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  border-radius: 0; /* Asegura que el botón sea un cuadrado */
-}
-
-.color-btn:hover {
-    transform: scale(1.1);
-}
-
-.color-btn1 {
-  width: 90px;
-  height: 60px;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  border-radius: 0;
-  transform: translateY(-10px);
-  position: relative;
-  left: 0vw;
-
-}
-.color-btn2 {
-  width: 90px;
-  height: 60px;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  border-radius: 0;
-  transform: translateY(130px);
-  position: relative;
-  left: -5.3vw;
-
-}
-.color-btn3 {
-  width: 90px;
-  height: 60px;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  border-radius: 0;
-  transform: translateY(270px);
-  position: relative;
-  left: -10.6vw;
-  
-
-}
-.color-btn4 {
-  width: 90px;
-  height: 60px;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  border-radius: 0;
-  transform: translateY(60px);
-  position: relative;
-  left: -12vw;
-
-}
-.color-btn5 {
-  width: 90px;
-  height: 60px;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  border-radius: 0;
-  transform: translateY(130px);
-  position: relative;
-  left: 4vw;
-
-}
-.color-btn6 {
-  width: 90px;
-  height: 60px;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  border-radius: 0;
-  transform: translateY(-80px);
-  position: relative;
-  left: 3vw;
-
-}
-.color-btn7 {
-  width: 90px;
-  height: 60px;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  border-radius: 0;
-  transform: translateY(60px);
-  position: relative;
-  left: -2.5vw;
-
-}
-.color-btn8 {
-  width: 90px;
-  height: 60px;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  border-radius: 0;
-  transform: translateY(200px);
-  position: relative;
-  left: -7.5vw;
-
-}
-.color-btn9 {
-  width: 90px;
-  height: 60px;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  border-radius: 0;
-  transform: translateY(-80px);
-  position: relative;
-  left: 12.5vw;
-
-}
-.color-btn10 {
-  width: 90px;
-  height: 60px;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  border-radius: 0;
-  transform: translateY(60px);
-  position: relative;
-  left: 7vw;
-
-}
-.color-btn11 {
-  width: 90px;
-  height: 60px;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  border-radius: 0;
-  transform: translateY(-150px);
-  position: relative;
-  left: 6vw;
-
-}
-.color-btn12 {
-  width: 90px;
-  height: 60px;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  border-radius: 0;
-  transform: translateY(-10px);
-  position: relative;
-  left: 0.5vw;
-
-}
-.color-btn13 {
-  width: 90px;
-  height: 60px;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  border-radius: 0;
-  transform: translateY(60px);
-  position: relative;
-  left: 16.8vw;
-
-}
-.color-btn14 {
-  width: 90px;
-  height: 60px;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  border-radius: 0;
-  transform: translateY(-150px);
-  position: relative;
-  left: 15.5vw;
-
-}
-.color-btn15 {
-  width: 90px;
-  height: 60px;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  border-radius: 0;
-  transform: translateY(-10px);
-  position: relative;
-  left: 10vw;
-
-}
-.color-btn16 {
-  width: 90px;
-  height: 60px;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  border-radius: 0;
-  transform: translateY(-220px);
-  position: relative;
-  left: 9vw;
-
-}
-.color-btn17 {
-  width: 90px;
-  height: 60px;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  border-radius: 0;
-  transform: translateY(-150px);
-  position: relative;
-  left: 25vw;
-
-}
-.color-btn18 {
-  width: 90px;
-  height: 60px;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  border-radius: 0;
-  transform: translateY(-10px);
-  position: relative;
-  left: 19.7vw;
-
-}
+   }
+   
 
 .t1{
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-1223px);
+  transform: translateY(-880px);
   position: relative;
   left: 52vw;
 }
@@ -434,7 +193,7 @@ body {
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-1140px);
+  transform: translateY(-800px);
   position: relative;
   left: 52vw;
 }
@@ -443,7 +202,7 @@ body {
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-1060px);
+  transform: translateY(-720px);
   position: relative;
   left: 51vw;
 }
@@ -452,7 +211,36 @@ body {
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-980px);
+  transform: translateY(-640px);
   position: relative;
   left: 50vw;
 }
+
+.color-picker{
+  position: relative;
+
+}
+
+.color-indicator{
+  display: inline-block;
+  width: 50px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 20px;
+  vertical-align: middle;
+  transform: translateY(-910px);
+  position: relative;
+  left: 88vw;
+
+}
+
+#color-picker{
+  transform: scale();
+  display:inline-block;
+  vertical-align: middle;
+  margin-left: 40px;
+  transform: translateY(-910px);
+  position: relative;
+  left: 65vw;
+}
+

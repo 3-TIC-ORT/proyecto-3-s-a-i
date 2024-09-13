@@ -1,0 +1,31 @@
+body{
+  background-color: burlywood;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-picker{
+  position: relative;
+  
+
+}
+
+.color-indicator{
+  display: inline-block;
+  width: 50px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 20px;
+  vertical-align: middle;
+
+}
+
+#color-picker{
+  width: 500px;
+  height: 200px;
+  display:inline-block;
+  vertical-align: middle;
+  margin-left: 40px;
+}
