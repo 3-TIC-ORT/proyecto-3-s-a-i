@@ -68,34 +68,36 @@
         </select>
     </h2>
     
-        <div class="Boton" id="Boton">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico">
-                <path d="M13 3h-2v10h2V3zm4.778 3.707L15.364 9.12a5.5 5.5 0 11-6.728 0L6.222 6.707a8 8 0 1011.556 0z"/>
-            </svg>
-        </div>
-    
-        <div class="Boton1" id="Boton1">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icono">
-                <path d="M13 3h-2v10h2V3zm4.778 3.707L15.364 9.12a5.5 5.5 0 11-6.728 0L6.222 6.707a8 8 0 1011.556 0z"/>
-            </svg>
-        </div>
-    
-        <div class="Boton2" id="Boton2">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icono">
-            <path d="M13 3h-2v10h2V3zm4.778 3.707L15.364 9.12a5.5 5.5 0 11-6.728 0L6.222 6.707a8 8 0 1011.556 0z"/>
-            </svg>
-        </div>
-    
-        <div class="Boton3" id="Boton3">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icono">
-                <path d="M13 3h-2v10h2V3zm4.778 3.707L15.364 9.12a5.5 5.5 0 11-6.728 0L6.222 6.707a8 8 0 1011.556 0z"/>
-            </svg>
-        </div>
+    <div class="god">
+        
+        <label class="switch"> 
+        <input type="checkbox"> 
+           <span class="slider"></span>
+        </label>
+
+        <label class="switch"> 
+       <input type="checkbox"> 
+           <span class="slider"></span>
+       </label>
+
+        <label class="switch"> 
+       <input type="checkbox"> 
+           <span class="slider"></span>
+       </label>
+
+       <label class="switch"> 
+       <input type="checkbox"> 
+           <span class="slider"></span>
+       </label>
+
+
+       </div>
         
 
     <div class= "input">
-        <input type="text" id="input" placeholder="Insertar # del color"></input>
+        <input type="text" id="input" placeholder="Insertar # del color" class="pedro"></input>
     </div>
+    <button onclick="changeColorInput()" class="meme">Elegir Color</button>
 
 
     <h2 class="t1">Parpadeo</h2>
@@ -114,9 +116,14 @@
           const colorPicker = new iro.ColorPicker("#color-picker" , {
             width:180, color: "#fff"
           });
-          colorPicker.on('color:change' , function(color) {
+          colorPicker.on('color:change' , function changeColor(color) {
             colorIndicator.style.backgroundColor = color.hexString;
           });
+          function changeColorInput(){
+            let color = document.getElementById("input").value;
+            colorIndicator.style.backgroundColor = `#${color}`
+          }
+          
         </script>
 
 

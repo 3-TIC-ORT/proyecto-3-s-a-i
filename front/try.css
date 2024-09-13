@@ -1,31 +1,67 @@
-body{
-  background-color: burlywood;
-  min-height: 90vh;
+*{
+  margin : 0;
+  padding : 0;
+
+}
+.god{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,  -50%);
+  text-align: center;
+
+}
+h1{
+  margin-bottom: 40px;
+  font-family: sans-serif ;
+
+}
+
+.god{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
-
-.color-picker{
+.switch{
   position: relative;
-  
-
-}
-
-.color-indicator{
-  display: inline-block;
-  width: 50px;
-  height: 200px;
-  background-color: #fff;
-  border-radius: 20px;
-  vertical-align: middle;
-
-}
-
-#color-picker{
-  width: 500px;
-  height: 200px;
   display:inline-block;
-  vertical-align: middle;
-  margin-left: 40px;
+  width:110px;
+  height: 60px;
+  margin: 0 10px;
+}
+
+.slider{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .2s;
+  border-radius: 34px;
+}
+
+.switch input {display:none}
+
+.slider:before{
+  position: absolute;
+  content: "";
+  height: 50px;
+  width: 50px;
+  left: 5px;
+  bottom: 5px;
+  background-color: white;
+  transition: .2s;
+  border-radius: 50px;
+
+}
+
+input:checked + .slider{
+  background-color: turquoise;
+
+}
+
+input:checked + .slider:before{
+  transform: translateX(50px);
+  
 }

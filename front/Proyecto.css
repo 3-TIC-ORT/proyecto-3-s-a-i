@@ -3,6 +3,7 @@ body {
     width: 100vw;
     background-color: #6082F9;
     margin: 0;
+    padding: 0;
   }
 
   header {
@@ -80,112 +81,66 @@ body {
       left: 25vw
     }
 
-    .Boton {
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      background-color: #707070; 
+    .god{
       display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      transform: translateY(-490px);
+      flex-direction: column;
+      gap: 50px;
+      transform: translateY(-475px);
       position: relative; 
-      left: 53vw
-  }
-  
-  
-  .icono {
-      fill: rgb(0, 0, 0);
-      width: 80px;
-      height: 80px;
-  }
+      left: 50.5vw
+    }
+
+    .switch{
+      position: relative;
+      display:inline-block;
+      width:110px;
+      height: 60px;
+      margin: 0 10px;
+    }
     
+    .slider{
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: .2s;
+      border-radius: 34px;
+    }
+    
+    .switch input {display:none}
+    
+    .slider:before{
+      position: absolute;
+      content: "";
+      height: 50px;
+      width: 50px;
+      left: 5px;
+      bottom: 5px;
+      background-color: white;
+      transition: .2s;
+      border-radius: 50px;
+    
+    }
+    
+    input:checked + .slider{
+      background-color: turquoise;
+    
+    }
+    
+    input:checked + .slider:before{
+      transform: translateX(50px);
+      
+    }
+
   
-
-  .Boton1 {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: #707070; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    transform: translateY(-440px);
-    position: relative; 
-    left: 53vw
-}
-
-
-
-.icono {
-    fill: rgb(0, 0, 0);
-    width: 80px;
-    height: 80px;
-}
-
-.Boton2 {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background-color: #707070; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  transform: translateY(-390px);
-  position: relative; 
-  left: 53vw
-}
-
-
-
-.icono {
-  fill: rgb(0, 0, 0);
-  width: 80px;
-  height: 80px;
-}
-
-.Boton3 {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background-color: #707070; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  transform: translateY(-340px);
-  position: relative; 
-  left: 53vw
-}
-
-
-.icono {
-  fill: rgb(0, 0, 0);
-  width: 80px;
-  height: 80px;
-}
-
-.input{
-  width: 50px;
-  height: 70px;
-  transform: translateY(-370px);
-  position: relative; 
-  left: 75vw
-   }
-   
-
 .t1{
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-880px);
+  transform: translateY(-975px);
   position: relative;
   left: 52vw;
 }
@@ -193,7 +148,7 @@ body {
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-800px);
+  transform: translateY(-905px);
   position: relative;
   left: 52vw;
 }
@@ -202,7 +157,7 @@ body {
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-720px);
+  transform: translateY(-835px);
   position: relative;
   left: 51vw;
 }
@@ -211,7 +166,7 @@ body {
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-640px);
+  transform: translateY(-765px);
   position: relative;
   left: 50vw;
 }
@@ -228,19 +183,33 @@ body {
   background-color: #fff;
   border-radius: 20px;
   vertical-align: middle;
-  transform: translateY(-910px);
+  transform: translateY(-1030px);
   position: relative;
   left: 88vw;
 
 }
 
 #color-picker{
-  transform: scale();
   display:inline-block;
   vertical-align: middle;
   margin-left: 40px;
-  transform: translateY(-910px);
+  transform: translateY(-1030px);
   position: relative;
   left: 65vw;
+}
+
+.pedro{
+  width: 17vw;
+  height: 6vh;
+  font-size: 3vh;
+  transform: translateY(-550px);
+  position: relative; 
+  left: 72vw
+}
+
+.meme{
+  transform: translateY(-585px);
+  position: relative; 
+  left: 90vw
 }
 
