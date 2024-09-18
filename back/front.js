@@ -10,4 +10,4 @@ function enviar(){
     });
     
 };
-document.getElementById("apply").addEventListener("click",enviar());
+document.getElementById("apply").addEventListener("click",enviar);
