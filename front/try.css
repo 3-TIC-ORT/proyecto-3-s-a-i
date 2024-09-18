@@ -1,31 +1,227 @@
-body{
-  background-color: burlywood;
-  min-height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #6082F9;
+  margin: 0;
+  padding: 0;
+  
+}
+
+header {
+    background-color: #34377B;
+    width: 100vw;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    text-align: end;
+}
+
+main{
+height: 80%;
+}
+
+h1 {
+    color: #EABE3F;
+    font-family: "Courier Prime", monospace;
+    font-weight: 500;
+    font-size: 15vh;
+    font-style: normal;
+    margin: 0;
+  }
+
+  .Menu1 {
+    width: 100%;
+    height: 5vw;
+    margin-left: 5em;
+    margin-bottom: -5px;
+  }
+  .Menu2 {
+      width: 100%;
+      height: 5vw;
+      margin-left: 5em;
+      
+  }
+  .Menu3 {
+      width: 100%;
+      height: 5vw;
+      margin-left: 5em;
+  }
+
+  .Menu4 {
+    width: 100%;
+    height: 5vw;
+    margin-left: 5em;
+  }
+
+  .Menu5 {
+    width: 100%;
+    height: 5vw;
+    margin-left: 5em;
+  }
+
+  .Menu6 {
+    width: 100%;
+    height: 5vw;
+    margin-left: 5em;
+    
+  }
+  nav{
+    display: flex;
+    width: 40%;
+    height: 80%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .god{
+    font-family: "Courier Prime", monospace;
+    font-weight: 40;
+    font-size: 2.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    height: 100%;
+    transform: translateY(-600px);
+    position: relative;
+    left: 52vw;
+    margin-top: 90px;
+    padding: -50px;
+  }
+
+  .switch{
+    position: relative;
+    display:inline-block;
+    width:55px;
+    height: 30px;
+    margin: 0 5px;
+  }
+  
+  .slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .2s;
+    border-radius: 34px;
+  }
+  
+  .switch input {display:none}
+  
+  .slider:before{
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 5px;
+    bottom: 5px;
+    background-color: white;
+    transition: .2s;
+    border-radius: 50px;
+  
+  }
+  
+  input:checked + .slider{
+    background-color: turquoise;
+  
+  }
+  
+  input:checked + .slider:before{
+    transform: translateX(20px);
+    
+  }
+
+
+.Texto{
+display: flex;
+justify-content: space-around;
+flex-direction: column;
+font-family: "Courier Prime", monospace;
+font-weight: 70;
+font-size: 3vh;
+transform: translateY(-905px);
+position: relative;
+left: 52vw;
+margin-top: -350px;
 }
 
 .color-picker{
-  position: relative;
-  
+position: relative;
 
 }
 
 .color-indicator{
-  display: inline-block;
-  width: 50px;
-  height: 200px;
-  background-color: #fff;
-  border-radius: 20px;
-  vertical-align: middle;
+display: inline-block;
+width: 50px;
+height: 200px;
+background-color: #fff;
+border-radius: 20px;
+vertical-align: middle;
+transform: translateY(-1150px);
+position: relative;
+left: 90vw;
 
 }
 
 #color-picker{
-  width: 500px;
-  height: 200px;
-  display:inline-block;
-  vertical-align: middle;
-  margin-left: 40px;
+display:inline-block;
+vertical-align: middle;
+margin-left: 40px;
+transform: translateY(-1150px);
+position: relative;
+left: 65vw;
+}
+
+.pedro{
+width: 17vw;
+height: 6vh;
+font-size: 3vh;
+transform: translateY(-800px);
+position: relative; 
+left: 72vw
+}
+
+.meme{
+transform: translateY(-830px);
+position: relative; 
+left: 90vw
+}
+
+.t1{
+  font-family: "Courier Prime", monospace;
+  font-weight: 100;
+ font-size: 3vh;
+  transform: translateY(-1150px);
+  position: relative;
+  left: 52vw;
+}
+.t2{
+  font-family: "Courier Prime", monospace;
+  font-weight: 100;
+ font-size: 3vh;
+  transform: translateY(-1080px);
+  position: relative;
+  left: 52vw;
+}
+
+.t3{
+  font-family: "Courier Prime", monospace;
+  font-weight: 100;
+ font-size: 3vh;
+  transform: translateY(-1010px);
+  position: relative;
+  left: 51vw;
+}
+
+.t4{
+  font-family: "Courier Prime", monospace;
+  font-weight: 100;
+ font-size: 3vh;
+  transform: translateY(-940px);
+  position: relative;
+  left: 50vw;
 }

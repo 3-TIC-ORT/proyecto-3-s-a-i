@@ -8,8 +8,105 @@
     <link rel="stylesheet" href="try.js" />
     <title>Document</title>
     <head>
-    <body class="body">
-        <div class="color-picker"></div>
+      <body>
+        <header><h1> S.A.I. </h1></header>
+
+<div class="copu">
+    <h2>
+        <label for= "Menu1"> </label>
+        <select title="Menu1" class="Menu1" name= "Menu1" id="Menu1">
+            <option> Seleccionar opcion</option>
+            <option> Set volume</option>
+            <option> Set upp volume</option>
+            <option> Set brightnes</option>
+        </select>
+    <h2>
+    <h2>
+        <label for= "Menu1"> </label>
+        <select class="Menu1" name= "Menu1" id="Menu1">
+            <option> Seleccionar opcion</option>
+            <option> Set volume</option>
+            <option> Set upp volume</option>
+            <option> Set brightnes</option>
+        </select>
+    </h2>
+    <h2>
+        <label for= "Menu1"> </label>
+        <select class="Menu1" name= "Menu1" id="Menu1">
+            <option> Seleccionar opcion</option>
+            <option> Set volume</option>
+            <option> Set upp volume</option>
+            <option> Set brightnes</option>
+        </select>
+    </h2>
+
+    <h2>
+        <label for= "Menu4"> </label>
+        <select title="Menu4" class="Menu4" name= "Menu4" id="Menu4">
+            <option> Seleccionar opcion</option>
+            <option> 1</option>
+            <option> 2</option>
+            <option> 3</option>
+        </select>
+    <div>
+    <h2>
+        <label for= "Menu5"> </label>
+        <select class="Menu5" name= "Menu5" id="Menu5">
+            <option> Seleccionar opcion</option>
+            <option> 1</option>
+            <option> 2</option>
+            <option>3</option>
+        </select>
+    </h2>
+    <h2>
+        <label for= "Menu6"> </label>
+        <select class="Menu6" name= "Menu6" id="Menu6">
+            <option> Seleccionar opcion</option>
+            <option> 1</option>
+            <option> 2</option>
+            <option>3</option>
+        </select>
+    </h2>
+</div>
+    <div class="god">
+        
+        <label class="switch" id="1"> 
+        <input type="checkbox"> 
+           <span class="slider"></span>
+        </label>
+
+        <label class="switch" id="2"> 
+       <input type="checkbox"> 
+           <span class="slider"></span>
+       </label>
+
+        <label class="switch" id="3"> 
+       <input type="checkbox"> 
+           <span class="slider"></span>
+       </label>
+
+       <label class="switch" id="4"> 
+       <input type="checkbox"> 
+           <span class="slider"></span>
+       </label>
+
+
+       </div>
+        
+
+    <div class= "input">
+        <input type="text" id="input" placeholder="Insertar # del color" class="pedro"></input>
+    </div>
+    <button onclick="changeColorInput()" class="meme">Elegir Color</button>
+
+
+    <h2 class="t1">Parpadeo</h2>
+    <h2 class="t2">Arcoiris</h2>
+    <h2 class="t3">Respiracion</h2>
+    <h2 class="t4">Desplazamiento</h2>
+
+
+    <div class="color-picker"></div>
         <div id="color-indicator" class="color-indicator"></div>
         <div id="color-picker"></div>
           
@@ -19,11 +116,17 @@
           const colorPicker = new iro.ColorPicker("#color-picker" , {
             width:180, color: "#fff"
           });
-          colorPicker.on('color:change' , function(color) {
+          colorPicker.on('color:change' , function changeColor(color) {
             colorIndicator.style.backgroundColor = color.hexString;
           });
-        </script>
+          function changeColorInput(){
+            let color = document.getElementById("input").value;
+            colorIndicator.style.backgroundColor = `#${color}`
+          }
 
+
+          
+        </script>
         
     </body>
 </html>
