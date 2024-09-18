@@ -1,146 +1,201 @@
 body {
-    height: 100vh;
+  height: 100vh;
+  width: 100vw;
+  background-color: #6082F9;
+  margin: 0;
+  padding: 0;
+  
+}
+
+header {
+    background-color: #34377B;
     width: 100vw;
-    background-color: #6082F9;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    text-align: end;
+}
+
+main{
+height: 80%;
+}
+
+h1 {
+    color: #EABE3F;
+    font-family: "Courier Prime", monospace;
+    font-weight: 500;
+    font-size: 15vh;
+    font-style: normal;
     margin: 0;
-    padding: 0;
   }
 
-  header {
-      background-color: #34377B;
-      width: 100vw;
-      height: 20%;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: end;
-      text-align: end;
+  .Menu1 {
+    width: 100%;
+    height: 5vw;
+    margin-left: 5em;
+    margin-bottom: -5px;
   }
-  
-  
-
-  h1 {
-      color: #EABE3F;
-      font-family: "Courier Prime", monospace;
-      font-weight: 500;
-      font-size: 15vh;
-      font-style: normal;
-      margin: 0;
-
-    }
-
-    .Menu1 {
-      width: 15%;
+  .Menu2 {
+      width: 100%;
       height: 5vw;
-      display: flex;
-      transform: translateY(350px);
-      position: relative; 
-      left: 5vw
-
-    }
-    .Menu2 {
-        width: 15%;
-        height: 5vw;
-        transform: translateY(-60px);
-        position: relative; 
-        left: 5vw
-        
-    }
-    .Menu3 {
-        width: 15%;
-        height: 5vw;
-        transform: translateY(20px);
-        position: relative; 
-      left: 5vw
-    }
-
-    .Menu4 {
-      width: 15%;
-      height: 5vw;
-      display: flex;
-      transform: translateY(-66px);
-      position: relative; 
-      left: 25vw
-    }
-
-    .Menu5 {
-      width: 15%;
-      height: 5vw;
-      display: flex;
-      transform: translateY(-308px);
-      position: relative; 
-      left: 25vw
-    }
-
-    .Menu6 {
-      width: 15%;
-      height: 5vw;
-      display: flex;
-      transform: translateY(-70px);
-      position: relative; 
-      left: 25vw
-    }
-
-    .god{
-      display: flex;
-      flex-direction: column;
-      gap: 50px;
-      transform: translateY(-475px);
-      position: relative; 
-      left: 50.5vw
-    }
-
-    .switch{
-      position: relative;
-      display:inline-block;
-      width:110px;
-      height: 60px;
-      margin: 0 10px;
-    }
-    
-    .slider{
-      position: absolute;
-      cursor: pointer;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: #ccc;
-      transition: .2s;
-      border-radius: 34px;
-    }
-    
-    .switch input {display:none}
-    
-    .slider:before{
-      position: absolute;
-      content: "";
-      height: 50px;
-      width: 50px;
-      left: 5px;
-      bottom: 5px;
-      background-color: white;
-      transition: .2s;
-      border-radius: 50px;
-    
-    }
-    
-    input:checked + .slider{
-      background-color: turquoise;
-    
-    }
-    
-    input:checked + .slider:before{
-      transform: translateX(50px);
+      margin-left: 5em;
       
-    }
+  }
+  .Menu3 {
+      width: 100%;
+      height: 5vw;
+      margin-left: 5em;
+  }
 
+  .Menu4 {
+    width: 100%;
+    height: 5vw;
+    margin-left: 5em;
+  }
+
+  .Menu5 {
+    width: 100%;
+    height: 5vw;
+    margin-left: 5em;
+  }
+
+  .Menu6 {
+    width: 100%;
+    height: 5vw;
+    margin-left: 5em;
+    
+  }
+  nav{
+    display: flex;
+    width: 40%;
+    height: 80%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .god{
+    font-family: "Courier Prime", monospace;
+    font-weight: 40;
+    font-size: 2.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    height: 100%;
+    transform: translateY(-600px);
+    position: relative;
+    left: 52vw;
+    margin-top: 90px;
+    padding: -50px;
+  }
+
+  .switch{
+    position: relative;
+    display:inline-block;
+    width: 85px;
+    height: 50px;
+    margin: 0 10px;
+  }
   
+  .slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .2s;
+    border-radius: 34px;
+  }
+  
+  .switch input {display:none}
+  
+  .slider:before{
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    left: 5px;
+    bottom: 5px;
+    background-color: white;
+    transition: .2s;
+    border-radius: 50px;
+  
+  }
+  
+  input:checked + .slider{
+    background-color: turquoise;
+  
+  }
+  
+  input:checked + .slider:before{
+    transform: translateX(35px);
+    
+  }
+
+
+.Texto{
+display: flex;
+justify-content: space-around;
+flex-direction: column;
+font-family: "Courier Prime", monospace;
+font-weight: 70;
+font-size: 3vh;
+transform: translateY(-905px);
+position: relative;
+left: 52vw;
+margin-top: -350px;
+}
+
+.color-picker{
+position: relative;
+
+}
+
+.color-indicator{
+display: inline-block;
+width: 50px;
+height: 200px;
+background-color: #fff;
+border-radius: 20px;
+vertical-align: middle;
+transform: translateY(-1410px);
+position: relative;
+left: 90vw;
+
+}
+
+#color-picker{
+display:inline-block;
+vertical-align: middle;
+margin-left: 40px;
+transform: translateY(-1400px);
+position: relative;
+left: 65vw;
+}
+
+.pedro{
+width: 17vw;
+height: 6vh;
+font-size: 3vh;
+transform: translateY(-1050px);
+position: relative; 
+left: 72vw
+}
+
+.meme{
+transform: translateY(-1105px);
+position: relative; 
+left: 90vw
+}
+
 .t1{
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-975px);
+  transform: translateY(-1150px);
   position: relative;
   left: 52vw;
 }
@@ -148,7 +203,7 @@ body {
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-905px);
+  transform: translateY(-1080px);
   position: relative;
   left: 52vw;
 }
@@ -157,7 +212,7 @@ body {
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-835px);
+  transform: translateY(-1010px);
   position: relative;
   left: 51vw;
 }
@@ -166,50 +221,15 @@ body {
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-765px);
+  transform: translateY(-940px);
   position: relative;
   left: 50vw;
 }
 
-.color-picker{
-  position: relative;
-
-}
-
-.color-indicator{
-  display: inline-block;
-  width: 50px;
-  height: 200px;
-  background-color: #fff;
-  border-radius: 20px;
-  vertical-align: middle;
-  transform: translateY(-1030px);
-  position: relative;
-  left: 88vw;
-
-}
-
-#color-picker{
-  display:inline-block;
-  vertical-align: middle;
-  margin-left: 40px;
-  transform: translateY(-1030px);
+.aply{
+  height: 70px;
+  width: 250px;
+  transform: translateY(-1000px);
   position: relative;
   left: 65vw;
 }
-
-.pedro{
-  width: 17vw;
-  height: 6vh;
-  font-size: 3vh;
-  transform: translateY(-550px);
-  position: relative; 
-  left: 72vw
-}
-
-.meme{
-  transform: translateY(-585px);
-  position: relative; 
-  left: 90vw
-}
-
