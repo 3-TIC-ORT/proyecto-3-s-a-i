@@ -4,7 +4,7 @@ body {
   background-color: #6082F9;
   margin: 0;
   padding: 0;
-  
+  overflow: hidden;
 }
 
 header {
@@ -75,12 +75,10 @@ h1 {
     justify-content: space-around;
   }
   .god{
-    font-family: "Courier Prime", monospace;
-    font-weight: 40;
-    font-size: 2.5vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    font-size: 2.5vh;
     width: 50%;
     height: 100%;
     transform: translateY(-600px);
@@ -88,6 +86,12 @@ h1 {
     left: 52vw;
     margin-top: 90px;
     padding: -50px;
+  }
+
+  .input1{
+    transform: translateY(-600px);
+    position: relative;
+    left: 52vw;
   }
 
   .switch{
