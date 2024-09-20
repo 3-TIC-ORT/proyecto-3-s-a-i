@@ -88,11 +88,7 @@ h1 {
     padding: -50px;
   }
 
-  .input1{
-    transform: translateY(-600px);
-    position: relative;
-    left: 52vw;
-  }
+  
 
   .switch{
     position: relative;
@@ -140,18 +136,7 @@ h1 {
   }
 
 
-.Texto{
-display: flex;
-justify-content: space-around;
-flex-direction: column;
-font-family: "Courier Prime", monospace;
-font-weight: 70;
-font-size: 3vh;
-transform: translateY(-905px);
-position: relative;
-left: 52vw;
-margin-top: -350px;
-}
+
 
 .color-picker{
 position: relative;
@@ -165,7 +150,7 @@ height: 200px;
 background-color: #fff;
 border-radius: 20px;
 vertical-align: middle;
-transform: translateY(-1410px);
+transform: translateY(-950px);
 position: relative;
 left: 90vw;
 
@@ -175,7 +160,7 @@ left: 90vw;
 display:inline-block;
 vertical-align: middle;
 margin-left: 40px;
-transform: translateY(-1400px);
+transform: translateY(-950px);
 position: relative;
 left: 65vw;
 }
@@ -184,13 +169,13 @@ left: 65vw;
 width: 17vw;
 height: 6vh;
 font-size: 3vh;
-transform: translateY(-1050px);
+transform: translateY(-600px);
 position: relative; 
 left: 72vw
 }
 
 .meme{
-transform: translateY(-1105px);
+transform: translateY(-655px);
 position: relative; 
 left: 90vw
 }
@@ -199,41 +184,65 @@ left: 90vw
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-1150px);
+  transform: translateY(-690px);
   position: relative;
-  left: 52vw;
+  left: 55vw;
 }
 .t2{
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-1080px);
+  transform: translateY(-625px);
   position: relative;
-  left: 52vw;
+  left: 55vw;
 }
 
 .t3{
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-1010px);
+  transform: translateY(-560px);
   position: relative;
-  left: 51vw;
+  left: 53vw;
 }
 
 .t4{
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-940px);
+  transform: translateY(-495px);
   position: relative;
-  left: 50vw;
+  left: 52vw;
 }
 
 .aply{
   height: 70px;
   width: 250px;
-  transform: translateY(-1000px);
+  transform: translateY(-550px);
   position: relative;
-  left: 65vw;
+  left: 64vw;
+}
+
+.input1{
+  transform: translateY(-430px);
+  position: relative;
+  left: 54vw;
+}
+
+.input2{
+  transform: translateY(-380px);
+  position: relative;
+  left: 54vw;
+}
+
+.input3{
+  transform: translateY(-330px);
+  position: relative;
+  left: 54vw;
+}
+
+.input4{
+  transform: translateY(-280px);
+  position: relative;
+  left: 54vw;
 }
