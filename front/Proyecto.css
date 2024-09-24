@@ -4,7 +4,7 @@ body {
   background-color: #6082F9;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  
 }
 
 header {
@@ -32,45 +32,68 @@ h1 {
   }
 
   .Menu1 {
-    width: 100%;
+    width: 200px;
     height: 5vw;
     margin-left: 5em;
     margin-bottom: -5px;
+    transform: translateY(10px);
+    position: relative;
+    left: 0vw;
+   
   }
   .Menu2 {
-      width: 100%;
+      width: 200px;
       height: 5vw;
       margin-left: 5em;
-      
+      transform: translateY(-140px);
+    position: relative;
+    left: 25vw;
   }
   .Menu3 {
-      width: 100%;
+      width: 200px;
       height: 5vw;
       margin-left: 5em;
+      transform: translateY(-30px);
   }
 
   .Menu4 {
-    width: 100%;
+    width: 200px;
     height: 5vw;
     margin-left: 5em;
+    transform: translateY(-110px);
+    position: relative;
+    left: 25vw;
   }
 
   .Menu5 {
-    width: 100%;
+    width: 200px;
     height: 5vw;
     margin-left: 5em;
+    transform: translateY(-50px);
   }
 
   .Menu6 {
-    width: 100%;
+    width: 200px;
     height: 5vw;
     margin-left: 5em;
+    transform: translateY(-125px);
+    position: relative;
+    left: 25vw;
     
   }
-  nav{
+
+  .Menu7{
+    width: 200px;
+    height: 5vw;
+    transform: translateY(30px);
+    position: relative;
+    left: 5.7vw;
+  }
+  .nav2{
     display: flex;
     width: 40%;
     height: 80%;
+    
     flex-wrap: wrap;
     justify-content: space-around;
   }
@@ -150,7 +173,7 @@ height: 200px;
 background-color: #fff;
 border-radius: 20px;
 vertical-align: middle;
-transform: translateY(-950px);
+transform: translateY(-1030px);
 position: relative;
 left: 90vw;
 
@@ -160,7 +183,7 @@ left: 90vw;
 display:inline-block;
 vertical-align: middle;
 margin-left: 40px;
-transform: translateY(-950px);
+transform: translateY(-1030px);
 position: relative;
 left: 65vw;
 }
@@ -169,13 +192,13 @@ left: 65vw;
 width: 17vw;
 height: 6vh;
 font-size: 3vh;
-transform: translateY(-600px);
+transform: translateY(-670px);
 position: relative; 
 left: 72vw
 }
 
 .meme{
-transform: translateY(-655px);
+transform: translateY(-725px);
 position: relative; 
 left: 90vw
 }
@@ -184,7 +207,7 @@ left: 90vw
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-690px);
+  transform: translateY(-770px);
   position: relative;
   left: 55vw;
 }
@@ -192,7 +215,7 @@ left: 90vw
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-625px);
+  transform: translateY(-700px);
   position: relative;
   left: 55vw;
 }
@@ -201,7 +224,7 @@ left: 90vw
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-560px);
+  transform: translateY(-630px);
   position: relative;
   left: 53vw;
 }
@@ -210,7 +233,7 @@ left: 90vw
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-495px);
+  transform: translateY(-560px);
   position: relative;
   left: 52vw;
 }
@@ -218,31 +241,31 @@ left: 90vw
 .aply{
   height: 70px;
   width: 250px;
-  transform: translateY(-550px);
+  transform: translateY(-620px);
   position: relative;
   left: 64vw;
 }
 
 .input1{
-  transform: translateY(-430px);
+  transform: translateY(-500px);
   position: relative;
   left: 54vw;
 }
 
 .input2{
-  transform: translateY(-380px);
+  transform: translateY(-450px);
   position: relative;
   left: 54vw;
 }
 
 .input3{
-  transform: translateY(-330px);
+  transform: translateY(-400px);
   position: relative;
   left: 54vw;
 }
 
 .input4{
-  transform: translateY(-280px);
+  transform: translateY(-350px);
   position: relative;
   left: 54vw;
 }
