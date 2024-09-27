@@ -83,8 +83,9 @@ h1 {
   }
 
   .Menu7{
-    width: 200px;
+    width: 195px;
     height: 5vw;
+    font-size: 20px;
     transform: translateY(30px);
     position: relative;
     left: 5.7vw;
