@@ -5,27 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="try.css" />
-    <link rel="stylesheet" href="try.js" />
+    
     <title>Soporte de Auriculares Inteligente</title>
     <head>
         <body>
             <header><h1> S.A.I. </h1></header>
 <main>
     
-<div class="BOX1">
+
+  <div class="BOX1">
         <div class="COMBOS"> 
             <label for="Menu1"> </label>
             <select title="Menu1" class="Menu1" name="Menu1" id="Menu1"  onchange="mostrarMenu7()">
               <option disabled selected>Perilla 1</option>
-              <option>Setar volumen</option>
-              <option>Setar volumen de la app</option>
-              <option>Setar brillo</option>
-              <option>Zoom</option>
+              <option value="1">Setear volumen</option>
+              <option value="2">Setear volumen de la app</option>
+              <option value="3" >Setear brillo</option>
+              <option value="4">Zoom</option>
             </select>
           
-          
-          
-            <div id="Menu7" style="display: none;">
+          <div id="Menu7" style="display: none;">
               <label for="Menu7"></label>
               <input type="text" id="Menu7" class="Menu7" name="Menu7" placeholder="Insertar Aplicacion">
             
@@ -37,10 +36,10 @@
             <label for= "Menu3"> </label>
             <select class="Menu3" name= "Menu3" id="Menu3" onchange="mostrarMenu8()">
                 <option disabled selected> Perilla 2</option>
-                <option> Setar volume</option>
-                <option> Setar volumen de la app</option>
-                <option> Setar brillo</option>
-                <option> Zoom</option>
+                <option value="1"> Setar volume</option>
+                <option value="2"> Setear volumen de la app</option>
+                <option value="3"> Setar brillo</option>
+                <option value="4"> Zoom</option>
             </select>
 
             <div id="Menu8" style="display: none;">
@@ -55,10 +54,10 @@
             <label for= "Menu5"> </label>
             <select class="Menu5" name= "Menu5" id="Menu5" onchange="mostrarMenu9()">
                 <option disabled selected> Perilla 3</option>
-                <option> Set volume</option>
-                <option> Setar volumen de la app</option>
-                <option> Ser brightnes</option>
-                <option> Zoom</option>
+                <option value="1"> Setear volumen</option>
+                <option value="2"> Setear volumen de la app</option>
+                <option value="3"> Setear brillo</option>
+                <option value="4"> Zoom</option>
             </select>
 
             <div id="Menu9" style="display: none;">
@@ -76,10 +75,10 @@
             <label for= "Menu2"> </label>
             <select class="Menu2" name= "Menu2" id="Menu2" onchange="mostrarMenu10()">
                 <option disabled selected> Boton 1</option>
-                <option> Mutaer</option>
-                <option> Matear microfono</option>
-                <option> Mutear Aplicacion</option>
-                <option> Tomae captura de pantalla</option>
+                <option value="5"> Mutear todo</option>
+                <option value="6"> Mutear microfono</option>
+                <option value="7"> Mutear Aplicacion</option>
+                <option value="8"> Tomar captura de pantalla</option>
             </select>
 
             <div id="Menu10" style="display: none;">
@@ -94,10 +93,10 @@
             <label for= "Menu4"> </label>
             <select title="Menu4" class="Menu4" name= "Menu4" id="Menu4" onchange="mostrarMenu11()">
                 <option disabled selected> Boton 2</option>
-                <option> Mutaer</option>
-                <option> Matear microfono</option>
-                <option> Mutear Aplicacion</option>
-                <option> Tomae captura de pantalla</option>
+                <option value="5"> Mutear todo</option>
+                <option value="6"> Mutear microfono</option>
+                <option value="7"> Mutear Aplicacion</option>
+                <option value="8"> Tomar captura de pantalla</option>
             </select>
 
             <div id="Menu11" style="display: none;">
@@ -112,10 +111,10 @@
             <label for= "Menu6"> </label>
             <select class="Menu6" name= "Menu6" id="Menu6" onchange="mostrarMenu12()">
                 <option disabled selected> Boton 3</option>
-                <option> Mutaer</option>
-                <option> Matear microfono</option>
-                <option> Mutear Aplicacion</option>
-                <option> Tomae captura de pantalla</option>
+                <option value="5"> Mutear todo</option>
+                <option value="6"> Mutear microfono</option>
+                <option value="7"> Mutear Aplicacion</option>
+                <option value="8"> Tomar captura de pantalla</option>
             </select>
 
             <div id="Menu12" style="display: none;">
@@ -185,108 +184,44 @@
 
            
 </main>           
-            <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
-            <script>
-              let colorIndicator = document.getElementById('color-indicator');
-                const colorPicker = new iro.ColorPicker("#color-picker", {
+<script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+<script>
+let colorIndicator = document.getElementById('color-indicator');
+  const colorPicker = new iro.ColorPicker("#color-picker", {
                     width: 180,
                     color: "#fff"
                 });
-                colorPicker.on('color:change', function (color) {
+        colorPicker.on('color:change', function (color) {
                     
-                colorIndicator.style.backgroundColor = color.hexString;
+        colorIndicator.style.backgroundColor = color.hexString;
                     
-                document.getElementById('input').value = color.hexString;
-                });
+        document.getElementById('input').value = color.hexString;
+  });
             
-              function changeColorInput() {
-                    let color = document.getElementById('input').value;
-                    colorIndicator.style.backgroundColor = `${color}`;
-                    colorPicker.color.hexString = color;
-                }
+</script>
 
-          
-          
-              function mostrarMenu7() {
-              var menu1 = document.getElementById("Menu1").value;
-              var menu7 = document.getElementById("Menu7");
-    
-                    if (menu1 === "Setar volumen de la app") {
-                           menu7.style.display = "block";
-                  } else {
-                           menu7.style.display = "none";
-    }
-  }
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.4/socket.io.js"></script>
+<script>
+const socket = io("http://localhost:3000");
 
-              function mostrarMenu8() {
-  var menu3 = document.getElementById("Menu3").value;
-  var menu8 = document.getElementById("Menu8");
-
-  if (menu3 === "Setar volumen de la app") {
-    menu8.style.display = "block";
-  } else {
-    menu8.style.display = "none";
-  }
-}
-
-              function mostrarMenu9() {
-  var menu5 = document.getElementById("Menu5").value;
-  var menu9 = document.getElementById("Menu9");
-
-  if (menu5 === "Setar volumen de la app") {
-    menu9.style.display = "block";
-  } else {
-    menu9.style.display = "none";
-  }
-}
-
-              function mostrarMenu10() {
-  var menu2 = document.getElementById("Menu2").value;
-  var menu10 = document.getElementById("Menu10");
-
-  if (menu2 === "Mutear Aplicacion") {
-    menu10.style.display = "block";
-  } else {
-    menu10.style.display = "none";
-  }
-}
-
-              function mostrarMenu11() {
-  var menu4 = document.getElementById("Menu4").value;
-  var menu11 = document.getElementById("Menu11");
-
-  if (menu4 === "Mutear Aplicacion") {
-    menu11.style.display = "block";
-  } else {
-    menu11.style.display = "none";
-  }
-}
-
-              function mostrarMenu12() {
-  var menu6 = document.getElementById("Menu6").value;
-  var menu12 = document.getElementById("Menu12");
-
-  if (menu6 === "Mutear Aplicacion") {
-    menu12.style.display = "block";
-  } else {
-    menu12.style.display = "none";
-  }
-}
-
+  const send = (type, data, callback = () => {}) => {
+    socket.emit("realTimeEvent", type, data, callback);
+  };
   
-
-              function checkOnlyOne(checkbox) {
-                    
-                    let checkboxes = document.querySelectorAll('.checkbox');
-                    checkboxes.forEach((item) => {
-                        if (item !== checkbox) {
-                            item.checked = false;
-                        }
-                    });
-                }
-            
-            </script>
-
+  const receive = (type, callback) => {
+    socket.on("realTimeEvent", (receivedType, data) => {
+      if (receivedType === type) return callback(data);
+    });
+  };
+  
+  const fetchData = (type, callback) => {
+    socket.emit("GETEvent", type, callback);
+  };
+  
+  const postData = (type, data, callback = () => {}) => {
+    socket.emit("POSTEvent", type, data, callback);
+  };</script>
+<script src="try.js"></script>
 
         
     </body>
