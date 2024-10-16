@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="front.js"></script>
 </head>
 <body>
-    <select name="p1" id="p1">
-        <option value="" disabled selected>seleccionar funcion</option>
+    <select name="p1" id="p1"> 
         <option value="setvolume">modificar volumen</option>
         <option value="setappvolume">modificar volumen de aplicación</option>
         <option value="setbrightnes">setear brillo</option>
     </select>
     <button id="apply">apply</button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.4/socket.io.js"></script>
+<script src="socket.js"></script> 
+<script src="front.js"></script>    
 </body>
 </html>

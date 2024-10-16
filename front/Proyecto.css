@@ -1,246 +1,281 @@
 body {
-    height: 100vh;
+  height: 100vh;
+  width: 100vw;
+  background-color: #6082F9;
+  margin: 0;
+  padding: 0;
+  
+}
+
+header {
+    background-color: #34377B;
     width: 100vw;
-    background-color: #6082F9;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    text-align: end;
+}
+
+main{
+height: 80%;
+display: grid;
+grid-template-columns:25% 25% 20% 30% ;
+}
+
+
+h1 {
+    color: #EABE3F;
+    font-family: "Courier Prime", monospace;
+    font-weight: 500;
+    font-size: 15vh;
+    font-style: normal;
     margin: 0;
   }
 
-  header {
-      background-color: #34377B;
-      width: 100vw;
-      height: 20%;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: end;
-      text-align: end;
-  }
-  
-  
-
-  h1 {
-      color: #EABE3F;
-      font-family: "Courier Prime", monospace;
-      font-weight: 500;
-      font-size: 15vh;
-      font-style: normal;
-      margin: 0;
-
-    }
-
-    .Menu1 {
-      width: 15%;
-      height: 5vw;
-      display: flex;
-      transform: translateY(350px);
-      position: relative; 
-      left: 5vw
-
-    }
-    .Menu2 {
-        width: 15%;
-        height: 5vw;
-        transform: translateY(-60px);
-        position: relative; 
-        left: 5vw
-        
-    }
-    .Menu3 {
-        width: 15%;
-        height: 5vw;
-        transform: translateY(20px);
-        position: relative; 
-      left: 5vw
-    }
-
-    .Menu4 {
-      width: 15%;
-      height: 5vw;
-      display: flex;
-      transform: translateY(-66px);
-      position: relative; 
-      left: 25vw
-    }
-
-    .Menu5 {
-      width: 15%;
-      height: 5vw;
-      display: flex;
-      transform: translateY(-308px);
-      position: relative; 
-      left: 25vw
-    }
-
-    .Menu6 {
-      width: 15%;
-      height: 5vw;
-      display: flex;
-      transform: translateY(-70px);
-      position: relative; 
-      left: 25vw
-    }
-
-    .Boton {
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      background-color: #707070; 
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      transform: translateY(-490px);
-      position: relative; 
-      left: 53vw
-  }
-  
-  
-  .icono {
-      fill: rgb(0, 0, 0);
-      width: 80px;
-      height: 80px;
-  }
+  .Menu1 {
+    width: 200px;
+    height: 5vw;
     
+    
+   
+  }
+  .Menu2 {
+      width: 200px;
+      height: 5vw;
+      
+      
+  }
+  .Menu3 {
+      width: 200px;
+      height: 5vw;
+      
+  }
+  .Menu4 {
+    width: 200px;
+    height: 5vw;
+  ;
+    
+  }
+  .Menu5 {
+    width: 200px;
+    height: 5vw;
+      }
+  .Menu6 {
+    width: 200px;
+    height: 5vw;
+    
+    
+  }
+  .Menu7{
+    width: 195px;
+    height: 3vw;
+    font-size: 20px;
+    
+  }
+  .Menu8{
+    width: 195px;
+    height: 3vw;
+    font-size: 20px;
+    
+  }
+  .Menu9{
+    width: 195px;
+    height: 3vw;
+    font-size: 20px;
+    
+  }
+  .Menu10{
+    width: 195px;
+    height: 3vw;
+    font-size: 20px;
+    margin: 0;
+  }
+  .Menu11{
+    width: 195px;
+    height: 3vw;
+    font-size: 20px;
+    
+  }
+  .Menu12{
+    width: 195px;
+    height: 3vw;
+    font-size: 20px;
+    
+  }
+
+  .BOX1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 80px;
+    
+  }
+
+  .BOX2{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .nav2{
+    display: flex;
+    width: 40%;
+    height: 80%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
   
 
-  .Boton1 {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: #707070; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  
+
+  .switch{
+    position: relative;
+    display:inline-block;
+    width: 85px;
+    height: 50px;
+    margin: 0 10px;
+  }
+  
+  .slider{
+    position: absolute;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    transform: translateY(-440px);
-    position: relative; 
-    left: 53vw
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .2s;
+    border-radius: 34px;
+  }
+  
+  .switch input {display:none}
+  
+  .slider:before{
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    left: 5px;
+    bottom: 5px;
+    background-color: white;
+    transition: .2s;
+    border-radius: 50px;
+  
+  }
+  
+  input:checked + .slider{
+    background-color: turquoise;
+  
+  }
+  
+  input:checked + .slider:before{
+    transform: translateX(35px);
+    
+  }
+
+
+
+
+.color-picker{
+position: relative;
+
+}
+
+.color-indicator{
+display: inline-block;
+width: 50px;
+height: 200px;
+background-color: #fff;
+border-radius: 20px;
+vertical-align: middle;
+
+
+}
+
+#color-picker{
+display:inline-block;
+vertical-align: middle;
+margin-left: 0px;
+
+}
+
+.pedro{
+width: 17vw;
+height: 6vh;
+font-size: 3vh;
+
 }
 
 
-
-.icono {
-    fill: rgb(0, 0, 0);
-    width: 80px;
-    height: 80px;
-}
-
-.Boton2 {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background-color: #707070; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  transform: translateY(-390px);
-  position: relative; 
-  left: 53vw
-}
-
-
-
-.icono {
-  fill: rgb(0, 0, 0);
-  width: 80px;
-  height: 80px;
-}
-
-.Boton3 {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background-color: #707070; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  transform: translateY(-340px);
-  position: relative; 
-  left: 53vw
-}
-
-
-.icono {
-  fill: rgb(0, 0, 0);
-  width: 80px;
-  height: 80px;
-}
-
-.input{
-  width: 50px;
-  height: 70px;
-  transform: translateY(-370px);
-  position: relative; 
-  left: 75vw
-   }
-   
 
 .t1{
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-880px);
-  position: relative;
-  left: 52vw;
+  
 }
 .t2{
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-800px);
-  position: relative;
-  left: 52vw;
+  
 }
 
 .t3{
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-720px);
-  position: relative;
-  left: 51vw;
+ 
 }
 
 .t4{
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-640px);
-  position: relative;
-  left: 50vw;
+ 
 }
 
-.color-picker{
+.aply{
+  height: 70px;
+  width: 250px;
+  font-size: 30px;
+  
+}
+
+
+
+.meme{
   position: relative;
+  top:-75px;
+  right:-250px;
+}
+.aply{
+  position: relative;
+  right: 5px;
+  top: 0px;
+}
+
+div{
+  padding: 10px;
+}
+
+.colores{
+  position: relative;
+  top: -35px;
+  
 
 }
 
-.color-indicator{
-  display: inline-block;
-  width: 50px;
-  height: 200px;
-  background-color: #fff;
-  border-radius: 20px;
-  vertical-align: middle;
-  transform: translateY(-910px);
-  position: relative;
-  left: 88vw;
+.Botones{
+  margin-top: -26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
 
 }
-
-#color-picker{
-  transform: scale();
-  display:inline-block;
-  vertical-align: middle;
-  margin-left: 40px;
-  transform: translateY(-910px);
-  position: relative;
-  left: 65vw;
-}
-
