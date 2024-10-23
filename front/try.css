@@ -20,7 +20,10 @@ header {
 
 main{
 height: 80%;
+display: grid;
+grid-template-columns:25% 25% 20% 30% ;
 }
+
 
 h1 {
     color: #EABE3F;
@@ -32,70 +35,120 @@ h1 {
   }
 
   .Menu1 {
-    width: 100%;
+    width: 200px;
     height: 5vw;
-    margin-left: 5em;
-    margin-bottom: -5px;
+    
+    
+   
   }
   .Menu2 {
-      width: 100%;
+      width: 200px;
       height: 5vw;
-      margin-left: 5em;
+      
       
   }
   .Menu3 {
-      width: 100%;
+      width: 200px;
       height: 5vw;
-      margin-left: 5em;
+      
   }
-
   .Menu4 {
-    width: 100%;
+    width: 200px;
     height: 5vw;
-    margin-left: 5em;
-  }
-
-  .Menu5 {
-    width: 100%;
-    height: 5vw;
-    margin-left: 5em;
-  }
-
-  .Menu6 {
-    width: 100%;
-    height: 5vw;
-    margin-left: 5em;
+  ;
     
   }
-  nav{
+  .Menu5 {
+    width: 200px;
+    height: 5vw;
+      }
+  .Menu6 {
+    width: 200px;
+    height: 5vw;
+    
+    
+  }
+  .Menu7{
+    width: 195px;
+    height: 3vw;
+    font-size: 20px;
+    
+  }
+  .Menu8{
+    width: 195px;
+    height: 3vw;
+    font-size: 20px;
+    
+  }
+  .Menu9{
+    width: 195px;
+    height: 3vw;
+    font-size: 20px;
+    
+  }
+  .Menu10{
+    width: 195px;
+    height: 3vw;
+    font-size: 20px;
+    margin: 0;
+  }
+  .Menu11{
+    width: 195px;
+    height: 3vw;
+    font-size: 20px;
+    
+  }
+  .Menu12{
+    width: 195px;
+    height: 3vw;
+    font-size: 20px;
+    
+  }
+
+  .BOX1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 80px;
+    
+    
+  }
+
+  .BOX2{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .COMBOS{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 130px;
+    
+  }
+  
+  .nav2{
     display: flex;
     width: 40%;
     height: 80%;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .god{
-    font-family: "Courier Prime", monospace;
-    font-weight: 40;
-    font-size: 2.5vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 50%;
-    height: 100%;
-    transform: translateY(-600px);
-    position: relative;
-    left: 52vw;
-    margin-top: 90px;
-    padding: -50px;
-  }
+  
+
+  
 
   .switch{
     position: relative;
     display:inline-block;
-    width:55px;
-    height: 30px;
-    margin: 0 5px;
+    width: 85px;
+    height: 50px;
+    margin: 0 10px;
   }
   
   .slider{
@@ -115,8 +168,8 @@ h1 {
   .slider:before{
     position: absolute;
     content: "";
-    height: 20px;
-    width: 20px;
+    height: 40px;
+    width: 40px;
     left: 5px;
     bottom: 5px;
     background-color: white;
@@ -131,26 +184,16 @@ h1 {
   }
   
   input:checked + .slider:before{
-    transform: translateX(20px);
+    transform: translateX(35px);
     
   }
 
 
-.Texto{
-display: flex;
-justify-content: space-around;
-flex-direction: column;
-font-family: "Courier Prime", monospace;
-font-weight: 70;
-font-size: 3vh;
-transform: translateY(-905px);
-position: relative;
-left: 52vw;
-margin-top: -350px;
-}
+
 
 .color-picker{
 position: relative;
+
 
 }
 
@@ -161,67 +204,98 @@ height: 200px;
 background-color: #fff;
 border-radius: 20px;
 vertical-align: middle;
-transform: translateY(-1150px);
-position: relative;
-left: 90vw;
+margin-left: -30px;
+
 
 }
 
 #color-picker{
 display:inline-block;
 vertical-align: middle;
-margin-left: 40px;
-transform: translateY(-1150px);
-position: relative;
-left: 65vw;
+margin-left: -40px;
+padding: 50px;
+
+
 }
 
 .pedro{
 width: 17vw;
 height: 6vh;
 font-size: 3vh;
-transform: translateY(-800px);
-position: relative; 
-left: 72vw
+
+
 }
 
-.meme{
-transform: translateY(-830px);
-position: relative; 
-left: 90vw
-}
+
 
 .t1{
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-1150px);
-  position: relative;
-  left: 52vw;
+  
 }
 .t2{
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-1080px);
-  position: relative;
-  left: 52vw;
+  
 }
 
 .t3{
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-1010px);
-  position: relative;
-  left: 51vw;
+ 
 }
 
 .t4{
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-940px);
+ 
+}
+
+.aply{
+  height: 70px;
+  width: 250px;
+  font-size: 30px;
+  
+}
+
+
+
+.meme{
   position: relative;
-  left: 50vw;
+  top:-65px;
+  right:-245px;
+}
+.aply{
+  position: relative;
+  right: 65px;
+  top: 50px;
+}
+
+div{
+  padding: 0px;
+}
+
+
+.colores{
+  position: relative;
+  top: -35px;
+  
+
+}
+
+.Botones{
+  margin-top: -26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+
+}
+
+.Led{
+  height: 90px;
 }

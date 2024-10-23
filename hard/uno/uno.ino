@@ -1,31 +1,33 @@
 int vOut; 
-int pinPot = A0;
-int pinLed = 10;
+#define pinPot A3
+#define pinLed 10
+#define pinPot2 A0
+#define pinLed2 5
+int valPot;
 int luz;
-int flag=false;
+int valPot2;
+int luz2;
 void setup()
 {
     pinMode(pinLed, OUTPUT);
     pinMode(pinPot, INPUT);
-    pinMode(2,INPUT);
+     pinMode(pinLed2, OUTPUT);
+    pinMode(pinPot2, INPUT);
   Serial.begin(9600);
 }
 
 void loop()
 {
-   String mesage1="b11";
-   if(digitalRead(2)==0 && flag==false){
-     Serial.println(mesage1);
-     flag=true;
-   }
-   if(digitalRead(2)==1){
-   flag=false; 
-   }
-   int valPot = analogRead(pinPot);
-   String str="p1";
-   String mesage=str + valPot;
-   Serial.println(mesage);
-   //luz = map(valPot,0,1023,0,255);
-   //analogWrite(pinLed,luz); 
-   //delay(300);
+   valPot = analogRead(pinPot);
+   Serial.println("tu luz es:");
+   Serial.println(valPot);
+   luz = map(valPot,0,1023,0,255);
+   analogWrite(pinLed,luz); 
+   delay(300); 
+   valPot2 = analogRead(pinPot2);
+   Serial.println("el sonido es:");
+   Serial.println(valPot2);
+   luz2 = map(valPot2,0,1023,0,255);
+   analogWrite(pinLed2,luz2); 
+   delay(300);
 }

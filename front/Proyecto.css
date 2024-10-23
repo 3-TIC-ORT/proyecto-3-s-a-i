@@ -4,7 +4,7 @@ body {
   background-color: #6082F9;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  
 }
 
 header {
@@ -20,7 +20,10 @@ header {
 
 main{
 height: 80%;
+display: grid;
+grid-template-columns:25% 25% 20% 30% ;
 }
+
 
 h1 {
     color: #EABE3F;
@@ -32,67 +35,103 @@ h1 {
   }
 
   .Menu1 {
-    width: 100%;
+    width: 200px;
     height: 5vw;
-    margin-left: 5em;
-    margin-bottom: -5px;
+    
+    
+   
   }
   .Menu2 {
-      width: 100%;
+      width: 200px;
       height: 5vw;
-      margin-left: 5em;
+      
       
   }
   .Menu3 {
-      width: 100%;
+      width: 200px;
       height: 5vw;
-      margin-left: 5em;
+      
   }
-
   .Menu4 {
-    width: 100%;
+    width: 200px;
     height: 5vw;
-    margin-left: 5em;
-  }
-
-  .Menu5 {
-    width: 100%;
-    height: 5vw;
-    margin-left: 5em;
-  }
-
-  .Menu6 {
-    width: 100%;
-    height: 5vw;
-    margin-left: 5em;
+  ;
     
   }
-  nav{
+  .Menu5 {
+    width: 200px;
+    height: 5vw;
+      }
+  .Menu6 {
+    width: 200px;
+    height: 5vw;
+    
+    
+  }
+  .Menu7{
+    width: 195px;
+    height: 3vw;
+    font-size: 20px;
+    
+  }
+  .Menu8{
+    width: 195px;
+    height: 3vw;
+    font-size: 20px;
+    
+  }
+  .Menu9{
+    width: 195px;
+    height: 3vw;
+    font-size: 20px;
+    
+  }
+  .Menu10{
+    width: 195px;
+    height: 3vw;
+    font-size: 20px;
+    margin: 0;
+  }
+  .Menu11{
+    width: 195px;
+    height: 3vw;
+    font-size: 20px;
+    
+  }
+  .Menu12{
+    width: 195px;
+    height: 3vw;
+    font-size: 20px;
+    
+  }
+
+  .BOX1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 80px;
+    
+  }
+
+  .BOX2{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .nav2{
     display: flex;
     width: 40%;
     height: 80%;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .god{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    font-size: 2.5vh;
-    width: 50%;
-    height: 100%;
-    transform: translateY(-600px);
-    position: relative;
-    left: 52vw;
-    margin-top: 90px;
-    padding: -50px;
-  }
+  
 
-  .input1{
-    transform: translateY(-600px);
-    position: relative;
-    left: 52vw;
-  }
+  
 
   .switch{
     position: relative;
@@ -140,18 +179,7 @@ h1 {
   }
 
 
-.Texto{
-display: flex;
-justify-content: space-around;
-flex-direction: column;
-font-family: "Courier Prime", monospace;
-font-weight: 70;
-font-size: 3vh;
-transform: translateY(-905px);
-position: relative;
-left: 52vw;
-margin-top: -350px;
-}
+
 
 .color-picker{
 position: relative;
@@ -165,75 +193,89 @@ height: 200px;
 background-color: #fff;
 border-radius: 20px;
 vertical-align: middle;
-transform: translateY(-1410px);
-position: relative;
-left: 90vw;
+
 
 }
 
 #color-picker{
 display:inline-block;
 vertical-align: middle;
-margin-left: 40px;
-transform: translateY(-1400px);
-position: relative;
-left: 65vw;
+margin-left: 0px;
+
 }
 
 .pedro{
 width: 17vw;
 height: 6vh;
 font-size: 3vh;
-transform: translateY(-1050px);
-position: relative; 
-left: 72vw
+
 }
 
-.meme{
-transform: translateY(-1105px);
-position: relative; 
-left: 90vw
-}
+
 
 .t1{
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-1150px);
-  position: relative;
-  left: 52vw;
+  
 }
 .t2{
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-1080px);
-  position: relative;
-  left: 52vw;
+  
 }
 
 .t3{
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-1010px);
-  position: relative;
-  left: 51vw;
+ 
 }
 
 .t4{
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
-  transform: translateY(-940px);
-  position: relative;
-  left: 50vw;
+ 
 }
 
 .aply{
   height: 70px;
   width: 250px;
-  transform: translateY(-1000px);
+  font-size: 30px;
+  
+}
+
+
+
+.meme{
   position: relative;
-  left: 65vw;
+  top:-75px;
+  right:-250px;
+}
+.aply{
+  position: relative;
+  right: 5px;
+  top: 0px;
+}
+
+div{
+  padding: 10px;
+}
+
+.colores{
+  position: relative;
+  top: -35px;
+  
+
+}
+
+.Botones{
+  margin-top: -26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+
 }

@@ -5,128 +5,231 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="try.css" />
-    <link rel="stylesheet" href="try.js" />
-    <title>Document</title>
+    
+    <title>Soporte de Auriculares Inteligente</title>
     <head>
-      <body>
-        <header><h1> S.A.I. </h1></header>
+        <body>
+            <header><h1> S.A.I. </h1></header>
+<main>
+    
 
-<div class="copu">
-    <h2>
-        <label for= "Menu1"> </label>
-        <select title="Menu1" class="Menu1" name= "Menu1" id="Menu1">
-            <option> Seleccionar opcion</option>
-            <option> Set volume</option>
-            <option> Set upp volume</option>
-            <option> Set brightnes</option>
-        </select>
-    <h2>
-    <h2>
-        <label for= "Menu1"> </label>
-        <select class="Menu1" name= "Menu1" id="Menu1">
-            <option> Seleccionar opcion</option>
-            <option> Set volume</option>
-            <option> Set upp volume</option>
-            <option> Set brightnes</option>
-        </select>
-    </h2>
-    <h2>
-        <label for= "Menu1"> </label>
-        <select class="Menu1" name= "Menu1" id="Menu1">
-            <option> Seleccionar opcion</option>
-            <option> Set volume</option>
-            <option> Set upp volume</option>
-            <option> Set brightnes</option>
-        </select>
-    </h2>
+  <div class="BOX1">
+        <div class="COMBOS"> 
+            <label for="Menu1"> </label>
+            <select title="Menu1" class="Menu1" name="Menu1" id="Menu1"  onchange="mostrarMenu7()">
+              <option disabled selected>Perilla 1</option>
+              <option value="setvolume">Setear volumen</option>
+              <option value="setappvolume">Setear volumen de la app</option>
+              <option value="setbrightness" >Setear brillo</option>
+              <option value="zoom">Zoom</option>
+            </select>
+          
+          <div id="Menu7" style="display: none;">
+              <label for="Menu7"></label>
+              <input type="text" id="Menu7" class="Menu7" name="Menu7" placeholder="Insertar Aplicacion">
+            
+              </input>
+            </div>
+          </div>  
 
-    <h2>
-        <label for= "Menu4"> </label>
-        <select title="Menu4" class="Menu4" name= "Menu4" id="Menu4">
-            <option> Seleccionar opcion</option>
-            <option> 1</option>
-            <option> 2</option>
-            <option> 3</option>
-        </select>
-    <div>
-    <h2>
-        <label for= "Menu5"> </label>
-        <select class="Menu5" name= "Menu5" id="Menu5">
-            <option> Seleccionar opcion</option>
-            <option> 1</option>
-            <option> 2</option>
-            <option>3</option>
-        </select>
-    </h2>
-    <h2>
-        <label for= "Menu6"> </label>
-        <select class="Menu6" name= "Menu6" id="Menu6">
-            <option> Seleccionar opcion</option>
-            <option> 1</option>
-            <option> 2</option>
-            <option>3</option>
-        </select>
-    </h2>
+        <div class="COMBOS"> 
+            <label for= "Menu3"> </label>
+            <select class="Menu3" name= "Menu3" id="Menu3" onchange="mostrarMenu8()">
+                <option disabled selected> Perilla 2</option>
+              <option value="setvolume">Setear volumen</option>
+              <option value="setappvolume">Setear volumen de la app</option>
+              <option value="setbrightness" >Setear brillo</option>
+              <option value="zoom">Zoom</option>
+            </select>
+
+            <div id="Menu8" style="display: none;">
+                <label for="Menu8"></label>
+                <input type="text" id="Menu8" class="Menu8" name="Menu8" placeholder="Insertar Aplicacion">
+              
+                </input>
+              </div>
+        </div> 
+
+        <div class="COMBOS"> 
+            <label for= "Menu5"> </label>
+            <select class="Menu5" name= "Menu5" id="Menu5" onchange="mostrarMenu9()">
+                <option disabled selected> Perilla 3</option>
+                <option value="setvolume">Setear volumen</option>
+              <option value="setappvolume">Setear volumen de la app</option>
+              <option value="setbrightness" >Setear brillo</option>
+              <option value="zoom">Zoom</option>
+            </select>
+
+            <div id="Menu9" style="display: none;">
+                <label for="Menu7"></label>
+                <input type="text" id="Menu9" class="Menu9" name="Menu9" placeholder="Insertar Aplicacion">
+              
+                </input>
+              </div>
+        </div> 
 </div>
-    <div class="god">
+
+<diV class="BOX2">
+          
+        <div class="COMBOS"> 
+            <label for= "Menu2"> </label>
+            <select class="Menu2" name= "Menu2" id="Menu2" onchange="mostrarMenu10()">
+                <option disabled selected> Boton 1</option>
+                <option value="mute"> Mutear todo</option>
+                <option value="mutemic"> Mutear microfono</option>
+                <option value="muteapp"> Mutear Aplicacion</option>
+                <option value="takescreenshot"> Tomar captura de pantalla</option>
+            </select>
+
+            <div id="Menu10" style="display: none;">
+                <label for="Menu7"></label>
+                <input type="text" id="Menu10" class="Menu10" name="Menu10" placeholder="Insertar Aplicacion">
+              
+                </input>
+              </div>
+        </div>   
         
-        <label class="switch" id="1"> 
-        <input type="checkbox"> 
-           <span class="slider"></span>
+        <div class="COMBOS"> 
+            <label for= "Menu4"> </label>
+            <select title="Menu4" class="Menu4" name= "Menu4" id="Menu4" onchange="mostrarMenu11()">
+                <option disabled selected> Boton 2</option>
+                <option value="mute"> Mutear todo</option>
+                <option value="mutemic"> Mutear microfono</option>
+                <option value="muteapp"> Mutear Aplicacion</option>
+                <option value="takescreenshot"> Tomar captura de pantalla</option>
+            </select>
+
+            <div id="Menu11" style="display: none;">
+                <label for="Menu7"></label>
+                <input type="text" id="Menu11" class="Menu11" name="Menu11" placeholder="Insertar Aplicacion">
+              
+                </input>
+              </div>
+        </div> 
+        
+        <div class="COMBOS"> 
+            <label for= "Menu6"> </label>
+            <select class="Menu6" name= "Menu6" id="Menu6" onchange="mostrarMenu12()">
+                <option disabled selected> Boton 3</option>
+                <option value="mute"> Mutear todo</option>
+                <option value="mutemic"> Mutear microfono</option>
+                <option value="muteapp"> Mutear Aplicacion</option>
+                <option value="takescreenshot"> Tomar captura de pantalla</option>
+            </select>
+
+            <div id="Menu12" style="display: none;">
+                <label for="Menu12"></label>
+                <input type="text" id="Menu12" class="Menu12" name="Menu12" placeholder="Insertar Aplicacion">
+              
+                </input>
+              </div>
+        </div> 
+        
+</diV>   
+
+ <div class="Botones">
+  
+  <div class="Led">
+  <h2 class="t1">Parpadeo:</h2>    
+   <div class="input1">
+        <label class="switch">
+            <input type="checkbox" id="input1" class="checkbox" onclick="checkOnlyOne(this)">
+            <span class="slider"></span>
         </label>
-
-        <label class="switch" id="2"> 
-       <input type="checkbox"> 
-           <span class="slider"></span>
-       </label>
-
-        <label class="switch" id="3"> 
-       <input type="checkbox"> 
-           <span class="slider"></span>
-       </label>
-
-       <label class="switch" id="4"> 
-       <input type="checkbox"> 
-           <span class="slider"></span>
-       </label>
-
-
-       </div>
-        
-
-    <div class= "input">
-        <input type="text" id="input" placeholder="Insertar # del color" class="pedro"></input>
     </div>
-    <button onclick="changeColorInput()" class="meme">Elegir Color</button>
+  </div>
+    
+    <div class="Led">
+    <h2 class="t2">Arcoiris:</h2>
+    <div class="input2">
+        <label class="switch">
+            <input type="checkbox" id="input2" class="checkbox" onclick="checkOnlyOne(this)">
+            <span class="slider"></span>
+        </label>
+    </div>
+  </div>
+    <div class="Led">
+    <h2 class="t3">Respiracion:</h2>
+    <div class="input3">
+        <label class="switch">
+            <input type="checkbox" id="input3" class="checkbox" onclick="checkOnlyOne(this)">
+            <span class="slider"></span>
+        </label>
+    </div>
+  </div>
+    
+    <div class="Led">
+    <h2 class="t4">Desplazamiento:</h2>
+    <div class="input4">
+        <label class="switch">
+            <input type="checkbox" id="input4" class="checkbox" onclick="checkOnlyOne(this)">
+            <span class="slider"></span>
+        </label>
+    </div>
+  </div>
 
+  </div>
+    
+                
 
-    <h2 class="t1">Parpadeo</h2>
-    <h2 class="t2">Arcoiris</h2>
-    <h2 class="t3">Respiracion</h2>
-    <h2 class="t4">Desplazamiento</h2>
-
-
-    <div class="color-picker"></div>
-        <div id="color-indicator" class="color-indicator"></div>
+<div class="colores">
+        <div class="color-picker"></div>
         <div id="color-picker"></div>
-          
-        <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
-        <script>
-          let colorIndicator = document.getElementById('color-indicator');
-          const colorPicker = new iro.ColorPicker("#color-picker" , {
-            width:180, color: "#fff"
-          });
-          colorPicker.on('color:change' , function changeColor(color) {
-            colorIndicator.style.backgroundColor = color.hexString;
-          });
-          function changeColorInput(){
-            let color = document.getElementById("input").value;
-            colorIndicator.style.backgroundColor = `#${color}`
-          }
+        <div id="color-indicator" class="color-indicator"></div>
 
 
-          
-        </script>
-        
-    </body>
+
+        <div class= "input">
+            <input type="text" id="input" placeholder="Insertar # del color" class="pedro"></input>
+        </div>
+        <button onclick="changeColorInput()" class="meme">Elegir Color</button>
+        <button class="aply" onclick="aplicar()">APLICAR</button>
+
+  </div>    
+      
+
+
+
+           
+</main>           
+<script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+<script>
+let colorIndicator = document.getElementById('color-indicator');
+  const colorPicker = new iro.ColorPicker("#color-picker", {
+                    width: 180,
+                    color: "#fff"
+                });
+        colorPicker.on('color:change', function (color) {
+                    
+        colorIndicator.style.backgroundColor = color.hexString;
+                    
+        document.getElementById('input').value = color.hexString;
+  });
+            
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.4/socket.io.js"></script>
+<script src="socket.js"></script>
+<script>
+const socket = io("http://localhost:3000");
+
+  const send = (type, data, callback = () => {}) => {
+    socket.emit("realTimeEvent", type, data, callback);
+  };
+  
+  const receive = (type, callback) => {
+    socket.on("realTimeEvent", (receivedType, data) => {
+      if (receivedType === type) return callback(data);
+    });
+  };
+  
+  const fetchData = (type, callback) => {
+    socket.emit("GETEvent", type, callback);
+  };
+  
+  const postData = (type, data, callback = () => {}) => {
+    socket.emit("POSTEvent", type, data, callback);
+  };</script>
+<script src="try.js"></script>     
+</body>    
 </html>
