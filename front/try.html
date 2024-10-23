@@ -18,10 +18,10 @@
             <label for="Menu1"> </label>
             <select title="Menu1" class="Menu1" name="Menu1" id="Menu1"  onchange="mostrarMenu7()">
               <option disabled selected>Perilla 1</option>
-              <option value="1">Setear volumen</option>
-              <option value="2">Setear volumen de la app</option>
-              <option value="3" >Setear brillo</option>
-              <option value="4">Zoom</option>
+              <option value="setvolume">Setear volumen</option>
+              <option value="setappvolume">Setear volumen de la app</option>
+              <option value="setbrightness" >Setear brillo</option>
+              <option value="zoom">Zoom</option>
             </select>
           
           <div id="Menu7" style="display: none;">
@@ -36,10 +36,10 @@
             <label for= "Menu3"> </label>
             <select class="Menu3" name= "Menu3" id="Menu3" onchange="mostrarMenu8()">
                 <option disabled selected> Perilla 2</option>
-                <option value="1"> Setar volume</option>
-                <option value="2"> Setear volumen de la app</option>
-                <option value="3"> Setar brillo</option>
-                <option value="4"> Zoom</option>
+              <option value="setvolume">Setear volumen</option>
+              <option value="setappvolume">Setear volumen de la app</option>
+              <option value="setbrightness" >Setear brillo</option>
+              <option value="zoom">Zoom</option>
             </select>
 
             <div id="Menu8" style="display: none;">
@@ -54,10 +54,10 @@
             <label for= "Menu5"> </label>
             <select class="Menu5" name= "Menu5" id="Menu5" onchange="mostrarMenu9()">
                 <option disabled selected> Perilla 3</option>
-                <option value="1"> Setear volumen</option>
-                <option value="2"> Setear volumen de la app</option>
-                <option value="3"> Setear brillo</option>
-                <option value="4"> Zoom</option>
+                <option value="setvolume">Setear volumen</option>
+              <option value="setappvolume">Setear volumen de la app</option>
+              <option value="setbrightness" >Setear brillo</option>
+              <option value="zoom">Zoom</option>
             </select>
 
             <div id="Menu9" style="display: none;">
@@ -75,10 +75,10 @@
             <label for= "Menu2"> </label>
             <select class="Menu2" name= "Menu2" id="Menu2" onchange="mostrarMenu10()">
                 <option disabled selected> Boton 1</option>
-                <option value="5"> Mutear todo</option>
-                <option value="6"> Mutear microfono</option>
-                <option value="7"> Mutear Aplicacion</option>
-                <option value="8"> Tomar captura de pantalla</option>
+                <option value="mute"> Mutear todo</option>
+                <option value="mutemic"> Mutear microfono</option>
+                <option value="muteapp"> Mutear Aplicacion</option>
+                <option value="takescreenshot"> Tomar captura de pantalla</option>
             </select>
 
             <div id="Menu10" style="display: none;">
@@ -93,10 +93,10 @@
             <label for= "Menu4"> </label>
             <select title="Menu4" class="Menu4" name= "Menu4" id="Menu4" onchange="mostrarMenu11()">
                 <option disabled selected> Boton 2</option>
-                <option value="5"> Mutear todo</option>
-                <option value="6"> Mutear microfono</option>
-                <option value="7"> Mutear Aplicacion</option>
-                <option value="8"> Tomar captura de pantalla</option>
+                <option value="mute"> Mutear todo</option>
+                <option value="mutemic"> Mutear microfono</option>
+                <option value="muteapp"> Mutear Aplicacion</option>
+                <option value="takescreenshot"> Tomar captura de pantalla</option>
             </select>
 
             <div id="Menu11" style="display: none;">
@@ -111,10 +111,10 @@
             <label for= "Menu6"> </label>
             <select class="Menu6" name= "Menu6" id="Menu6" onchange="mostrarMenu12()">
                 <option disabled selected> Boton 3</option>
-                <option value="5"> Mutear todo</option>
-                <option value="6"> Mutear microfono</option>
-                <option value="7"> Mutear Aplicacion</option>
-                <option value="8"> Tomar captura de pantalla</option>
+                <option value="mute"> Mutear todo</option>
+                <option value="mutemic"> Mutear microfono</option>
+                <option value="muteapp"> Mutear Aplicacion</option>
+                <option value="takescreenshot"> Tomar captura de pantalla</option>
             </select>
 
             <div id="Menu12" style="display: none;">
@@ -128,15 +128,18 @@
 </diV>   
 
  <div class="Botones">
-   <h2 class="t1">Parpadeo:</h2>    
-   
-    <div class="input1">
+  
+  <div class="Led">
+  <h2 class="t1">Parpadeo:</h2>    
+   <div class="input1">
         <label class="switch">
             <input type="checkbox" id="input1" class="checkbox" onclick="checkOnlyOne(this)">
             <span class="slider"></span>
         </label>
     </div>
+  </div>
     
+    <div class="Led">
     <h2 class="t2">Arcoiris:</h2>
     <div class="input2">
         <label class="switch">
@@ -144,7 +147,8 @@
             <span class="slider"></span>
         </label>
     </div>
-    
+  </div>
+    <div class="Led">
     <h2 class="t3">Respiracion:</h2>
     <div class="input3">
         <label class="switch">
@@ -152,7 +156,9 @@
             <span class="slider"></span>
         </label>
     </div>
+  </div>
     
+    <div class="Led">
     <h2 class="t4">Desplazamiento:</h2>
     <div class="input4">
         <label class="switch">
@@ -160,7 +166,9 @@
             <span class="slider"></span>
         </label>
     </div>
-</div>
+  </div>
+
+  </div>
     
                 
 
@@ -201,6 +209,7 @@ let colorIndicator = document.getElementById('color-indicator');
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.4/socket.io.js"></script>
+<script src="socket.js"></script>
 <script>
 const socket = io("http://localhost:3000");
 
@@ -221,10 +230,6 @@ const socket = io("http://localhost:3000");
   const postData = (type, data, callback = () => {}) => {
     socket.emit("POSTEvent", type, data, callback);
   };</script>
-<script src="try.js"></script>
-
-        
-    </body>
-           
-        
+<script src="try.js"></script>     
+</body>    
 </html>

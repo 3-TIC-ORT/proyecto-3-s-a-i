@@ -127,6 +127,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
     height: 130px;
     
   }
@@ -293,4 +294,8 @@ div{
   justify-content: space-evenly;
   align-items: flex-start;
 
+}
+
+.Led{
+  height: 90px;
 }
