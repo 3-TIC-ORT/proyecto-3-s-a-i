@@ -121,9 +121,9 @@ let datosFront = {
     led3:respiracion,
     led4:desplazamiento,
 }
-
+function aplicar(){
 fetchData("funciones", (listasensores)=>{
-    for(let i=1;i<listasensores.lenght;i++){
+    for(let i=1;i<listasensores.length;i++){
         if(datosFront[listasensores[i].nombre].includes("app")){
           listasensores[i].funcion=datosFront[`${listasensores[i].nombre}`];
           listasensores[i].appdata=datosFront[`InsertarAplicacion${listasensores[i].nombre}`]
@@ -131,8 +131,13 @@ fetchData("funciones", (listasensores)=>{
           listasensores[i].funcion=datosFront[`${listasensores[i].nombre}`];
         }
     }
+    postData("corregir",listasensores,()=>{
+      console.log("correcció hecho")
+    })
 });
 }
+}
+
 
 
 
