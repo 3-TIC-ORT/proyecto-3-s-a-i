@@ -2,6 +2,7 @@
 //
 void setup()
 {
+
   pinMode(A0, INPUT);
   pinMode(5, OUTPUT);
 }
@@ -9,4 +10,5 @@ void setup()
 void loop()
 {
   analogWrite(5, constrain(analogRead(A0), 0, 255));
-  delay(10); 
+  delay(10);
+}

@@ -4,7 +4,7 @@ function enviar(){
         data[1].funcion=p1;
         
         //for(let i=1;i<data.lenght;i++){
-        //    data[i].funcion=document.getElementById(`${data.nombre}`).value
+        //    data[i].funcion=document.getElementById(`${data[i].nombre}`).value
         //};
         postData("corregir",data,(respuesta)=>{console.log(respuesta)});
     });

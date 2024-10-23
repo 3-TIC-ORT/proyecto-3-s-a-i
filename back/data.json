@@ -1,12 +1,11 @@
 [
   {
     "nombre": "a1",
-    "funcion": "setdevice",
-    "appdata": "null"
+    "funcion": "setdevice"
   },
   {
     "nombre": "p1",
-    "funcion": "setbrightnes",
+    "funcion": "setvolume",
     "appdata": "null"
   },
   {
