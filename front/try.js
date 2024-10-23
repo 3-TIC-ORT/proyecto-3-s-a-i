@@ -97,7 +97,10 @@ let InsertarAplicacion4 = document.getElementById("Menu10").value;
 let InsertarAplicacion5 = document.getElementById("Menu11").value;
 let InsertarAplicacion6 = document.getElementById("Menu12").value;
 let color = document.getElementById("input").value;
-
+let led1 = document.getElementById("input1").value;
+let led2 = document.getElementById("input2").value;
+let led3 = document.getElementById("input3").value;
+let led4 = document.getElementById("input4").value;
 
 let datosFront = {
     p1:p1,
@@ -106,19 +109,26 @@ let datosFront = {
     b1:b1,
     b2:b2,
     b3:b3,
-    InsertarAplicacion1:InsertarAplicacion1,
-    InsertarAplicacion2:InsertarAplicacion2,
-    InsertarAplicacion3:InsertarAplicacion3,
-    InsertarAplicacion4:InsertarAplicacion4,
-    InsertarAplicacion5:InsertarAplicacion5,
-    InsertarAplicacion6:InsertarAplicacion6,
+    InsertarAplicacionp1:InsertarAplicacion1,
+    InsertarAplicacionp2:InsertarAplicacion2,
+    InsertarAplicaciop3:InsertarAplicacion3,
+    InsertarAplicacionb1:InsertarAplicacion4,
+    InsertarAplicacionb2:InsertarAplicacion5,
+    InsertarAplicacionb3:InsertarAplicacion6,
     color:color,
+    led1:parpadeo,
+    led2:arcoiris,
+    led3:respiracion,
+    led4:desplazamiento,
 }
 
 fetchData("funciones", (listasensores)=>{
     for(let i=1;i<listasensores.lenght;i++){
         if(datosFront[listasensores[i].nombre].includes("app")){
-            listasensores[i].funcion=datosFront[listasensores[i].nombre]
+          listasensores[i].funcion=datosFront[`${listasensores[i].nombre}`];
+          listasensores[i].appdata=datosFront[`InsertarAplicacion${listasensores[i].nombre}`]
+        } else{
+          listasensores[i].funcion=datosFront[`${listasensores[i].nombre}`];
         }
     }
 });
