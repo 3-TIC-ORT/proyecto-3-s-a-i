@@ -1,0 +1,36 @@
+[
+  {
+    "nombre": "a1",
+    "funcion": "setdevice"
+  },
+  {
+    "nombre": "p1",
+    "funcion": "setvolume",
+    "appdata": "null"
+  },
+  {
+    "nombre": "p2",
+    "funcion": "setappvolume",
+    "appdata": "Spotify.exe"
+  },
+  {
+    "nombre": "p3",
+    "funcion": "setbrightnes",
+    "appdata": "null"
+  },
+  {
+    "nombre": "b1",
+    "funcion": "mute",
+    "appdata": "null"
+  },
+  {
+    "nombre": "b2",
+    "funcion": "mutemic",
+    "appdata": "null"
+  },
+  {
+    "nombre": "b3",
+    "funcion": "muteapp",
+    "appdata": "Spotify.exe"
+  }
+]
