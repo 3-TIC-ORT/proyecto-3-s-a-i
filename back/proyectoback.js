@@ -1,11 +1,12 @@
-import { SerialPort } from 'serialport';
+import { SerialPort,ReadlineParser } from 'serialport';
 import { fileURLToPath } from 'node:url'; 
 import { dirname,join } from 'node:path';
 import { exec } from 'child_process'; 
 import  fs  from 'fs';
-import {startServer,onEvent} from 'soquetic'
+import {startServer,onEvent} from 'soquetic';
 
-//const puerto=new SerialPort({path:'COM5',baudRate:9600});
+const puerto=new SerialPort({path:'COM11',baudRate:9600});
+const parser = puerto.pipe(new ReadlineParser());
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const nirpath = join(__dirname,"/nircmd/nircmd.exe");
 
@@ -53,32 +54,21 @@ function setdevice(numP){
 };
 let maxvolumen=65535;
 let maxpot=1023;
-let setvolumestate=0;
 function setvolume(numP){
-    if(setvolumestate!=numP){
-    let valorcomand=Number(Math.round((numP/maxpot)*maxvolumen));
+    let valorcomand=Number(Math.trunc((numP*maxvolumen)/maxpot));
     let comand = nirpath+" setsysvolume "+valorcomand;
     exec(comand);
-    setvolumestate=numP;
-    };
 };
-let setbrightnesstate=0;
 function setbrightnes(numP){
-    if(setbrightnesstate!=numP){
     let valorcomand=Number(Math.round((numP/maxpot)*100));
     let comand=nirpath+" setbrigtness "+valorcomand;
     exec(comand);
-    setbrightnesstate=numP;
-    };
 };
-let setappvolumestate=0;
+
 function setappvolume(numP,app){
-    if(setappvolumestate!=numP){
     let valorcomand=Number(Math.round((numP/maxpot)*maxvolumen));
     let comand = nirpath+" setappvolume "+app+" "+valorcomand;
     exec(comand);
-    setvolumestate=numP;
-    };
 };
 function takescreenshot(numP){
     if(numP===1){
@@ -86,22 +76,16 @@ function takescreenshot(numP){
         exec(comand); 
     };
 };
-let zoomstate=0;
 function zoom(numP){
-    if(Math.round(zoomstate/100)!=Math.round(numP/100)){
-        if(Math.round(zoomstate/100)<Math.round(numP/100)){
-            let comand= nirpath+"sendkeypress ctrl+plus";
-            exec(comand);
-            zoomstate=numP;
-        };
-        if(Math.round(zoomstate/100)>Math.round(numP/100)){
-            let comand= nirpath+"sendkeypress ctrl+minus";
-            exec(comand);
-            zoomstate=numP;
-        };
+    if(Math.round(zoomstate/100)<Math.round(numP/100)){
+        let comand= nirpath+"sendkeypress ctrl+plus";
+        exec(comand);
+    };
+    if(Math.round(zoomstate/100)>Math.round(numP/100)){
+        let comand= nirpath+"sendkeypress ctrl+minus";
+        exec(comand);
     };
 };
-
 function CategorizadorS(txt){
     let sensores=['a1','p1','p2','p3','b1','b2','b3'];
     for(let i=0;i<sensores.length;i++){
@@ -123,10 +107,10 @@ function CategorizadorS(txt){
 };
 
 
-/*puerto.on('data',(data)=>{
-    let texto=Buffer.from(data, 'hex').toString('utf-8');
-    CategorizadorS(texto);
-});*/
+parser.on('data',(data)=>{
+    let txt=data.toString();
+    CategorizadorS(txt);
+});
 onEvent("funciones",()=>{
     let sensores=JSON.parse(fs.readFileSync("data.json","utf-8"));
     return sensores;
@@ -134,5 +118,11 @@ onEvent("funciones",()=>{
 onEvent("corregir",(correccion)=>{
     fs.writeFileSync("data.json",JSON.stringify(correccion,null,2));
     return  "correción hecha";
+});
+onEvent("led",(ledata)=>{
+    let red =parseInt(ledata.slice(1, 3),16);
+    let green=parseInt(ledata.slice(3, 5),16);
+    let blue=parseInt(ledata.slice(5, 7),16);
+    puerto.write(`${red},${green},${blue}\n`);
 });
 startServer(3000); 
