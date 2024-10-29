@@ -5,7 +5,7 @@ document.getElementById("input").addEventListener("keypress", function(event) {
 });
 function changeColorInput() {
   let color = document.getElementById('input').value;
-  // Asegúrate de que colorIndicator y colorPicker están definidos en tu código
+  
   colorIndicator.style.backgroundColor = `${color}`;
   colorPicker.color.hexString = color;
 }
@@ -28,9 +28,9 @@ function mostrarMenu8() {
       var menu8 = document.getElementById("Menu8");
       
       if (menu3.value == "setappvolume") {
-        menu8.style.display = "block"; // Muestra el Menu8
+        menu8.style.display = "block"; 
       } else {
-        menu8.style.display = "none";  // Oculta el Menu8
+        menu8.style.display = "none";  
       }
     }
     
@@ -39,9 +39,9 @@ function mostrarMenu9() {
       var menu9 = document.getElementById("Menu9");
       
       if (menu5.value == "setappvolume") {
-        menu9.style.display = "block"; // Muestra el Menu9
+        menu9.style.display = "block"; 
       } else {
-        menu9.style.display = "none";  // Oculta el Menu9
+        menu9.style.display = "none";  
       }
     }
     
@@ -50,9 +50,9 @@ function mostrarMenu10() {
       var menu10 = document.getElementById("Menu10");
       
       if (menu2.value == "muteapp") {
-        menu10.style.display = "block"; // Muestra el Menu10
+        menu10.style.display = "block"; 
       } else {
-        menu10.style.display = "none";  // Oculta el Menu10
+        menu10.style.display = "none";  
       }
     }
     
@@ -61,9 +61,9 @@ function mostrarMenu11() {
       var menu11 = document.getElementById("Menu11");
       
       if (menu4.value == "muteapp") {
-        menu11.style.display = "block"; // Muestra el Menu11
+        menu11.style.display = "block"; 
       } else {
-        menu11.style.display = "none";  // Oculta el Menu11
+        menu11.style.display = "none";  
       }
     }
     
@@ -72,9 +72,9 @@ function mostrarMenu12() {
       var menu12 = document.getElementById("Menu12");
       
       if (menu6.value == "muteapp") {
-        menu12.style.display = "block"; // Muestra el Menu12
+        menu12.style.display = "block"; 
       } else {
-        menu12.style.display = "none";  // Oculta el Menu12
+        menu12.style.display = "none";  
       }
     }
       
