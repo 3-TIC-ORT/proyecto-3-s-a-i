@@ -5,7 +5,7 @@ document.getElementById("input").addEventListener("keypress", function(event) {
 });
 function changeColorInput() {
   let color = document.getElementById('input').value;
-  
+
   colorIndicator.style.backgroundColor = `${color}`;
   colorPicker.color.hexString = color;
 }
