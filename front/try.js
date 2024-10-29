@@ -1,8 +1,14 @@
+document.getElementById("input").addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    changeColorInput();
+  }
+});
 function changeColorInput() {
-    let color = document.getElementById('input').value;
-                colorIndicator.style.backgroundColor = `${color}`;
-                colorPicker.color.hexString = color;
-                    }
+  let color = document.getElementById('input').value;
+  // Asegúrate de que colorIndicator y colorPicker están definidos en tu código
+  colorIndicator.style.backgroundColor = `${color}`;
+  colorPicker.color.hexString = color;
+}
     
               
               
