@@ -1,17 +1,10 @@
-document.getElementById("input").addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    changeColorInput();
-  }
-});
 function changeColorInput() {
   let color = document.getElementById('input').value;
 
   colorIndicator.style.backgroundColor = `${color}`;
   colorPicker.color.hexString = color;
 }
-    
-              
-              
+
 function mostrarMenu7() {
     var menu1 = document.getElementById("Menu1");
     var menu7 = document.getElementById("Menu7");
@@ -88,49 +81,35 @@ function checkOnlyOne(checkbox) {
               });
           }
 
-function mandarDatos(){
 
-let p1 = document.getElementById("Menu1").value;
-let p2 = document.getElementById("Menu3").value;
-let p3 = document.getElementById("Menu5").value;
-let b1 = document.getElementById("Menu2").value;
-let b2 = document.getElementById("Menu4").value;
-let b3 = document.getElementById("Menu6").value;
-let InsertarAplicacion1 = document.getElementById("Menu7").value;
-let InsertarAplicacion2 = document.getElementById("Menu8").value;
-let InsertarAplicacion3 = document.getElementById("Menu9").value;
-let InsertarAplicacion4 = document.getElementById("Menu10").value;
-let InsertarAplicacion5 = document.getElementById("Menu11").value;
-let InsertarAplicacion6 = document.getElementById("Menu12").value;
-let color = document.getElementById("input").value;
-let led1 = document.getElementById("input1").value;
-let led2 = document.getElementById("input2").value;
-let led3 = document.getElementById("input3").value;
-let led4 = document.getElementById("input4").value;
 
-let datosFront = {
-    p1:p1,
-    p2:p2,
-    p3:p3,
-    b1:b1,
-    b2:b2,
-    b3:b3,
-    InsertarAplicacionp1:InsertarAplicacion1,
-    InsertarAplicacionp2:InsertarAplicacion2,
-    InsertarAplicaciop3:InsertarAplicacion3,
-    InsertarAplicacionb1:InsertarAplicacion4,
-    InsertarAplicacionb2:InsertarAplicacion5,
-    InsertarAplicacionb3:InsertarAplicacion6,
-    color:color,
-    led1:parpadeo,
-    led2:arcoiris,
-    led3:respiracion,
-    led4:desplazamiento,
-}
+document.getElementById("aply").addEventListener( "click", aplicar);
+
 function aplicar(){
+  
+  let datosFront = {
+    p1:document.getElementById("Menu1").value,
+    p2:document.getElementById("Menu3").value,
+    p3:document.getElementById("Menu5").value,
+    b1:document.getElementById("Menu2").value,
+    b2:document.getElementById("Menu4").value,
+    b3:document.getElementById("Menu6").value,
+    InsertarAplicacion1:document.getElementById("Menu7").value,
+    InsertarAplicacion2:document.getElementById("Menu8").value,
+    InsertarAplicacion3:document.getElementById("Menu9").value,
+    InsertarAplicacion4:document.getElementById("Menu10").value,
+    InsertarAplicacion5:document.getElementById("Menu11").value,
+    InsertarAplicacion6:document.getElementById("Menu12").value,
+    color:document.getElementById("input").value,
+    parpadeo:document.getElementById("input1").value,
+    arcoiris:document.getElementById("input2").value,
+    respiracion:document.getElementById("input3").value,
+    desplazamiento:document.getElementById("input4").value,
+  }
+
 fetchData("funciones", (listasensores)=>{
-    for(let i=1;i<listasensores.length;i++){
-        if(datosFront[listasensores[i].nombre].includes("app")){
+    for(let i= 1;i<listasensores.length;i++){
+        if(datosFront[`${listasensores[i].nombre}`]==="setappvolume" ||[`${listasensores[i].nombre}`]==="muteapp"){
           listasensores[i].funcion=datosFront[`${listasensores[i].nombre}`];
           listasensores[i].appdata=datosFront[`InsertarAplicacion${listasensores[i].nombre}`]
         } else{
@@ -141,9 +120,6 @@ fetchData("funciones", (listasensores)=>{
       console.log("correcció hecho")
     })
 });
-}
-}
-
-
+};
 
 
