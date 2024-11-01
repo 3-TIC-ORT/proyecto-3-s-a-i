@@ -39,8 +39,8 @@ void loop()
  Serial.println("tu luz es:");
    Serial.println(valPot);
    delay(300);
-    if (buttonState2 ==HIGH){
-   if (buttonState == HIGH) {
+    if (buttonState2 == HIGH){
+   if (buttonState == LOW) {
        
        analogWrite(rojo, luz);
        analogWrite(verde, luz);
