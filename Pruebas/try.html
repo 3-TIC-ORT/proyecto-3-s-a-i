@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="try.css" />
-    <script src="try.js"></script> 
+    
     <title>Soporte de Auriculares Inteligente</title>
     <head>
         <body>
@@ -183,7 +183,7 @@
             <input type="text" id="input" placeholder="Insertar # del color" class="pedro"></input>
         </div>
         <button onclick="changeColorInput()" class="meme">Elegir Color</button>
-        <button class="aply" onclick="aplicar()">APLICAR</button>
+        <button class="aply" id="aply">APLICAR</button>
 
   </div>    
       
@@ -210,26 +210,6 @@ let colorIndicator = document.getElementById('color-indicator');
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.4/socket.io.js"></script>
 <script src="socket.js"></script>
-<script>
-const socket = io("http://localhost:3000");
-
-  const send = (type, data, callback = () => {}) => {
-    socket.emit("realTimeEvent", type, data, callback);
-  };
-  
-  const receive = (type, callback) => {
-    socket.on("realTimeEvent", (receivedType, data) => {
-      if (receivedType === type) return callback(data);
-    });
-  };
-  
-  const fetchData = (type, callback) => {
-    socket.emit("GETEvent", type, callback);
-  };
-  
-  const postData = (type, data, callback = () => {}) => {
-    socket.emit("POSTEvent", type, data, callback);
-  };</script>
-    
+<script src="try.js"></script>
 </body>    
 </html>

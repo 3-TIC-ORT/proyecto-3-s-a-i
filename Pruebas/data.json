@@ -5,17 +5,17 @@
   },
   {
     "nombre": "p1",
-    "funcion": "setappvolume",
-    "appdata": "chrome.exe"
+    "funcion": "setvolume",
+    "appdata": "null"
   },
   {
     "nombre": "p2",
-    "funcion": "setvolume",
+    "funcion": "setappvolume",
     "appdata": "Spotify.exe"
   },
   {
     "nombre": "p3",
-    "funcion": "zoom",
+    "funcion": "setbrightnes",
     "appdata": "null"
   },
   {
@@ -31,6 +31,6 @@
   {
     "nombre": "b3",
     "funcion": "muteapp",
-    "appdata": "chrome.exe"
+    "appdata": "Spotify.exe"
   }
 ]
