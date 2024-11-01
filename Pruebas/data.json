@@ -5,32 +5,26 @@
   },
   {
     "nombre": "p1",
-    "funcion": "setvolume",
-    "appdata": "null"
+    "funcion": "setappvolume"
   },
   {
     "nombre": "p2",
-    "funcion": "setappvolume",
-    "appdata": "Spotify.exe"
+    "funcion": "setappvolume"
   },
   {
     "nombre": "p3",
-    "funcion": "setbrightnes",
-    "appdata": "null"
+    "funcion": "setappvolume"
   },
   {
     "nombre": "b1",
-    "funcion": "mute",
-    "appdata": "null"
+    "funcion": "muteapp"
   },
   {
     "nombre": "b2",
-    "funcion": "mutemic",
-    "appdata": "null"
+    "funcion": "muteapp"
   },
   {
     "nombre": "b3",
-    "funcion": "muteapp",
-    "appdata": "Spotify.exe"
+    "funcion": "muteapp"
   }
 ]

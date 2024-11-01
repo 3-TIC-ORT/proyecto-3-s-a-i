@@ -1,3 +1,9 @@
+document.getElementById('input').addEventListener('keydown', function(event) {
+  if (event.key === 'Enter') {
+      changeColorInput();
+  }
+});
+
 function changeColorInput() {
   let color = document.getElementById('input').value;
 
@@ -94,12 +100,12 @@ function aplicar(){
     b1:document.getElementById("Menu2").value,
     b2:document.getElementById("Menu4").value,
     b3:document.getElementById("Menu6").value,
-    InsertarAplicacion1:document.getElementById("Menu7").value,
-    InsertarAplicacion2:document.getElementById("Menu8").value,
-    InsertarAplicacion3:document.getElementById("Menu9").value,
-    InsertarAplicacion4:document.getElementById("Menu10").value,
-    InsertarAplicacion5:document.getElementById("Menu11").value,
-    InsertarAplicacion6:document.getElementById("Menu12").value,
+    InsertarAplicacionp1:document.getElementById("Menu7").value,
+    InsertarAplicacionp2:document.getElementById("Menu8").value,
+    InsertarAplicacionp3:document.getElementById("Menu9").value,
+    InsertarAplicacionb1:document.getElementById("Menu10").value,
+    InsertarAplicacionb2:document.getElementById("Menu11").value,
+    InsertarAplicacionb3:document.getElementById("Menu12").value,
     color:document.getElementById("input").value,
     parpadeo:document.getElementById("input1").value,
     arcoiris:document.getElementById("input2").value,
@@ -108,12 +114,12 @@ function aplicar(){
   }
 
 fetchData("funciones", (listasensores)=>{
+
     for(let i= 1;i<listasensores.length;i++){
-        if(datosFront[`${listasensores[i].nombre}`]==="setappvolume" ||[`${listasensores[i].nombre}`]==="muteapp"){
-          listasensores[i].funcion=datosFront[`${listasensores[i].nombre}`];
-          listasensores[i].appdata=datosFront[`InsertarAplicacion${listasensores[i].nombre}`]
-        } else{
-          listasensores[i].funcion=datosFront[`${listasensores[i].nombre}`];
+      listasensores[i].funcion=datosFront[`${listasensores[i].nombre}`];
+      console.log(datosFront[`InsertarAplicacion${listasensores[i].nombre}`]);
+      if(listasensores[i].funcion==="setappvolume" ||listasensores[i].funcion==="muteapp"){
+        listasensores[i].appdata=datosFront[`InsertarAplicacion${listasensores[i].nombre}`]
         }
     }
     postData("corregir",listasensores,()=>{

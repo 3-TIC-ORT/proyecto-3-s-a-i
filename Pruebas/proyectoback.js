@@ -115,8 +115,8 @@ onEvent("funciones",()=>{
     let sensores=JSON.parse(fs.readFileSync("data.json","utf-8"));
     return sensores;
 });
-onEvent("corregir",(correccion)=>{
-    fs.writeFileSync("data.json",JSON.stringify(correccion,null,2));
+onEvent("corregir",(correction)=>{
+    fs.writeFileSync("data.json",JSON.stringify(correction,null,2));
     return  "correción hecha";
 });
 onEvent("led",(ledata)=>{
