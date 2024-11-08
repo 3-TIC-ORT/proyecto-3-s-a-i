@@ -5,26 +5,32 @@
   },
   {
     "nombre": "p1",
-    "funcion": "setappvolume"
+    "funcion": "setappvolume",
+    "appdata": ""
   },
   {
     "nombre": "p2",
-    "funcion": "setappvolume"
+    "funcion": "Perilla 2",
+    "appdata": "werwe"
   },
   {
     "nombre": "p3",
-    "funcion": "setappvolume"
+    "funcion": "Perilla 3",
+    "appdata": "weerw"
   },
   {
     "nombre": "b1",
-    "funcion": "muteapp"
+    "funcion": "muteapp",
+    "appdata": ""
   },
   {
     "nombre": "b2",
-    "funcion": "muteapp"
+    "funcion": "takescreenshot",
+    "appdata": "wreew"
   },
   {
     "nombre": "b3",
-    "funcion": "muteapp"
+    "funcion": "Boton 3",
+    "appdata": "werewr"
   }
 ]

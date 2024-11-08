@@ -35,71 +35,71 @@ h1 {
   }
 
   .Menu1 {
-    width: 200px;
+    width: 220px;
     height: 5vw;
     
     
    
   }
   .Menu2 {
-      width: 200px;
+      width: 220px;
       height: 5vw;
       
       
   }
   .Menu3 {
-      width: 200px;
+      width: 220px;
       height: 5vw;
       
   }
   .Menu4 {
-    width: 200px;
+    width: 220px;
     height: 5vw;
   ;
     
   }
   .Menu5 {
-    width: 200px;
+    width: 220px;
     height: 5vw;
       }
   .Menu6 {
-    width: 200px;
+    width: 220px;
     height: 5vw;
     
     
   }
   .Menu7{
-    width: 195px;
+    width: 220px;
     height: 3vw;
     font-size: 20px;
     
   }
   .Menu8{
-    width: 195px;
+    width: 220px;
     height: 3vw;
     font-size: 20px;
     
   }
   .Menu9{
-    width: 195px;
+    width: 220px;
     height: 3vw;
     font-size: 20px;
     
   }
   .Menu10{
-    width: 195px;
+    width: 220px;
     height: 3vw;
     font-size: 20px;
     margin: 0;
   }
   .Menu11{
-    width: 195px;
+    width: 220px;
     height: 3vw;
     font-size: 20px;
     
   }
   .Menu12{
-    width: 195px;
+    width: 220px;
     height: 3vw;
     font-size: 20px;
     
@@ -128,7 +128,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    height: 130px;
+    height: 150px;
     
   }
   
@@ -222,6 +222,7 @@ padding: 50px;
 width: 17vw;
 height: 6vh;
 font-size: 3vh;
+right: 20px;
 
 
 }
@@ -256,24 +257,46 @@ font-size: 3vh;
 }
 
 .aply{
-  height: 70px;
-  width: 250px;
-  font-size: 30px;
-  
-}
-
-
+    padding: 30px 90px;
+    font-size: 30px;
+    font-family: "Courier Prime", monospace;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #34377B;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    position: absolute;
+    top: 420px;
+  }
 
 .meme{
-  position: relative;
-  top:-65px;
-  right:-245px;
-}
-.aply{
-  position: relative;
-  right: 65px;
-  top: 50px;
-}
+    padding: 3px 5px;
+    font-size: 18px;
+    position: absolute;
+    font-family: "Courier Prime", monospace;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #34377B;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    right: 20px;
+    top: 335px;
+  }
+
+  
+  button:hover {
+    background-color: #ff0000;
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+
+
 
 div{
   padding: 0px;
@@ -298,4 +321,106 @@ div{
 
 .Led{
   height: 90px;
+}
+
+select {
+  width: 220px;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #34377B;
+  outline: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'><path fill='%2334377B' d='M2 0L0 2h4z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  transition: all 0.3s ease;
+}
+
+select:hover {
+  background-color: #f0f0f0;
+  border-color: #34377B;
+}
+
+select:focus {
+  background-color: #f5f5f5;
+  border-color: #6082F9;
+  box-shadow: 0 0 5px rgba(96, 130, 249, 0.5);
+}
+
+select {
+  width: 200px;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #34377B;
+  outline: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'><path fill='%2334377B' d='M2 0L0 2h4z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  transition: all 0.3s ease;
+}
+
+select:hover {
+  background-color: #f0f0f0;
+  border-color: #34377B;
+}
+
+select:focus {
+  background-color: #f5f5f5;
+  border-color: #6082F9;
+  box-shadow: 0 0 5px rgba(96, 130, 249, 0.5);
+}
+
+
+input[type="text"] {
+  width: 195px;
+  padding: 10px;
+  font-size: 22px;
+  color: #34377B;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #6082F9;
+  box-shadow: 0 0 5px rgba(96, 130, 249, 0.5);
+}
+
+
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-family: "Courier Prime", monospace;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #34377B;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #fc1818;
+}
+
+.button-container .meme {
+  left: 20px;
+  right: -300px;
+}
+
+.button-container .aply {
+  right: 65px;
+  top: -20px;
 }
