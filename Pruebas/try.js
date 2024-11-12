@@ -87,6 +87,49 @@ function checkOnlyOne(checkbox) {
               });
           }
 
+const input = document.getElementById("Menu7");
+input.addEventListener("blur", () => {
+  if (!input.value.endsWith(".exe") && input.value.trim() !== "") {
+                  input.value += ".exe";
+              }
+          });
+
+const input2 = document.getElementById("Menu8");
+input2.addEventListener("blur", () => {
+  if (!input2.value.endsWith(".exe") && input2.value.trim() !== "") {
+      input2.value += ".exe";
+}
+});
+      
+const input3 = document.getElementById("Menu9");
+input3.addEventListener("blur", () => {
+  if (!input3.value.endsWith(".exe") && input3.value.trim() !== "") {
+      input3.value += ".exe";
+}
+});
+
+const input4 = document.getElementById("Menu10");
+input4.addEventListener("blur", () => {
+   if (!input4.value.endsWith(".exe") && input4.value.trim() !== "") {
+        input4.value += ".exe";
+}
+});
+
+const input5 = document.getElementById("Menu11");
+input5.addEventListener("blur", () => {
+  if (!input5.value.endsWith(".exe") && input5.value.trim() !== "") {
+      input5.value += ".exe";
+}
+});
+
+
+const input6 = document.getElementById("Menu12");
+input6.addEventListener("blur", () => {
+  if (!input6.value.endsWith(".exe") && input6.value.trim() !== "") {
+      input6.value += ".exe";
+            }
+              });
+
 
 
 document.getElementById("aply").addEventListener( "click", aplicar);

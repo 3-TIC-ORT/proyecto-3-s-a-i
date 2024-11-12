@@ -14,9 +14,11 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: end;
+    justify-content: space-between;
     text-align: end;
+
 }
+
 
 main{
 height: 80%;
@@ -32,6 +34,15 @@ h1 {
     font-size: 15vh;
     font-style: normal;
     margin: 0;
+  }
+  h2 {
+    color: #EABE3F;
+    font-family: "Courier Prime", monospace;
+    font-weight: 50px;
+    font-size: 3vh;
+    font-style: normal;
+    margin: 0;
+
   }
 
   .Menu1 {
@@ -223,8 +234,6 @@ width: 17vw;
 height: 6vh;
 font-size: 3vh;
 right: 20px;
-
-
 }
 
 
@@ -233,12 +242,14 @@ right: 20px;
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
+ color: black;
   
 }
 .t2{
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
+ color: black;
   
 }
 
@@ -246,6 +257,7 @@ right: 20px;
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
+ color: black;
  
 }
 
@@ -253,6 +265,7 @@ right: 20px;
   font-family: "Courier Prime", monospace;
   font-weight: 100;
  font-size: 3vh;
+ color: black;
  
 }
 
@@ -314,13 +327,20 @@ div{
   margin-top: -26px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: flex-start;
+  
+  
 
 }
 
 .Led{
-  height: 90px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 20px;
+  padding-top: 20px;
 }
 
 select {
