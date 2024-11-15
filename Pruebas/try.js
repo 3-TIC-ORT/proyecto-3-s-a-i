@@ -122,7 +122,6 @@ input5.addEventListener("blur", () => {
 }
 });
 
-
 const input6 = document.getElementById("Menu12");
 input6.addEventListener("blur", () => {
   if (!input6.value.endsWith(".exe") && input6.value.trim() !== "") {

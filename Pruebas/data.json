@@ -5,8 +5,8 @@
   },
   {
     "nombre": "p1",
-    "funcion": "setappvolume",
-    "appdata": "sdfdsd"
+    "funcion": "setbrightness",
+    "appdata": "dfsd.exe"
   },
   {
     "nombre": "p2",
@@ -15,8 +15,8 @@
   },
   {
     "nombre": "p3",
-    "funcion": "Perilla 3",
-    "appdata": ""
+    "funcion": "setvolume",
+    "appdata": "L.O.L..exe"
   },
   {
     "nombre": "b1",
