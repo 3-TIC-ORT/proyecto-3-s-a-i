@@ -19,6 +19,16 @@
     "appdata": "Google.exe"
   },
   {
+    "nombre": "p2",
+    "funcion": "setvolume",
+    "appdata": "Spotify.exe"
+  },
+  {
+    "nombre": "p3",
+    "funcion": "setvolume",
+    "appdata": "null"
+  },
+  {
     "nombre": "b1",
     "funcion": "muteapp",
     "appdata": "Youtube.exe"
@@ -33,4 +43,3 @@
     "funcion": "takescreenshot",
     "appdata": ""
   }
-]

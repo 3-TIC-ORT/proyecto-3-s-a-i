@@ -5,8 +5,8 @@ import { exec } from 'child_process';
 import  fs  from 'fs';
 import {startServer,onEvent} from 'soquetic';
 
-/*const puerto=new SerialPort({path:'COM11',baudRate:9600});
-const parser = puerto.pipe(new ReadlineParser());*/
+const puerto=new SerialPort({path:'COM4',baudRate:9600});
+const parser = puerto.pipe(new ReadlineParser());
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const nirpath = join(__dirname,"/nircmd/nircmd.exe");
 
@@ -107,10 +107,10 @@ function CategorizadorS(txt){
 };
 
 
-/*parser.on('data',(data)=>{
+parser.on('data',(data)=>{
     let txt=data.toString();
     CategorizadorS(txt);
-});*/
+});
 onEvent("funciones",()=>{
     let sensores=JSON.parse(fs.readFileSync("data.json","utf-8"));
     return sensores;

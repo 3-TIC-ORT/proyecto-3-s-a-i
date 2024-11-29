@@ -20,8 +20,8 @@
   },
   {
     "nombre": "b1",
-    "funcion": "mute",
-    "appdata": "null"
+    "funcion": "takescreenshot",
+    "appdata": "chrome.exe"
   },
   {
     "nombre": "b2",

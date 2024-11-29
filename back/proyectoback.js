@@ -5,7 +5,7 @@ import { exec } from 'child_process';
 import  fs  from 'fs';
 import {startServer,onEvent} from 'soquetic';
 
-const puerto=new SerialPort({path:'COM10',baudRate:9600});
+const puerto=new SerialPort({path:'COM11',baudRate:9600});
 const parser = puerto.pipe(new ReadlineParser());
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const nirpath = join(__dirname,"/nircmd/nircmd.exe");
