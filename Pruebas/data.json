@@ -5,32 +5,32 @@
   },
   {
     "nombre": "p1",
-    "funcion": "setbrightness",
-    "appdata": "dfsd.exe"
+    "funcion": "setvolume",
+    "appdata": ""
   },
   {
     "nombre": "p2",
-    "funcion": "Perilla 2",
+    "funcion": "zoom",
     "appdata": ""
   },
   {
     "nombre": "p3",
-    "funcion": "setvolume",
-    "appdata": "L.O.L..exe"
+    "funcion": "setappvolume",
+    "appdata": "Google.exe"
   },
   {
     "nombre": "b1",
-    "funcion": "Boton 1",
-    "appdata": ""
+    "funcion": "muteapp",
+    "appdata": "Youtube.exe"
   },
   {
     "nombre": "b2",
-    "funcion": "Boton 2",
+    "funcion": "mutemic",
     "appdata": ""
   },
   {
     "nombre": "b3",
-    "funcion": "Boton 3",
+    "funcion": "takescreenshot",
     "appdata": ""
   }
 ]
