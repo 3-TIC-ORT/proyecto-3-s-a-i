@@ -17,7 +17,7 @@ let funciones={
     setdevice:setdevice,
     setvolume:setvolume,
     setappvolume:setappvolume,
-    setbrightnes:setbrightnes,
+    setbrightness:setbrightness,
     takescreenshot:takescreenshot,
     zoom:zoom
 };
@@ -59,7 +59,7 @@ function setvolume(numP){
     let comand = nirpath+" setsysvolume "+valorcomand;
     exec(comand);
 };
-function setbrightnes(numP){
+function setbrightness(numP){
     let valorcomand=Number(Math.round((numP/maxpot)*100));
     let comand=nirpath+" setbrightness "+valorcomand;
     exec(comand);

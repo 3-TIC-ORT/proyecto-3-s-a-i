@@ -5,17 +5,17 @@
   },
   {
     "nombre": "p1",
+    "funcion": "setappvolume",
+    "appdata": "chrome.exe"
+  },
+  {
+    "nombre": "p2",
     "funcion": "setvolume",
     "appdata": ""
   },
   {
-    "nombre": "p2",
-    "funcion": "zoom",
-    "appdata": ""
-  },
-  {
     "nombre": "p3",
-    "funcion": "setappvolume",
+    "funcion": "setvolume",
     "appdata": "Google.exe"
   },
   {
@@ -30,16 +30,17 @@
   },
   {
     "nombre": "b1",
-    "funcion": "muteapp",
+    "funcion": "mute",
     "appdata": "Youtube.exe"
   },
   {
     "nombre": "b2",
-    "funcion": "mutemic",
+    "funcion": "mute",
     "appdata": ""
   },
   {
     "nombre": "b3",
-    "funcion": "takescreenshot",
+    "funcion": "mute",
     "appdata": ""
-  }]
+  }
+]
