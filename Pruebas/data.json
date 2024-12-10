@@ -5,32 +5,42 @@
   },
   {
     "nombre": "p1",
-    "funcion": "setvolume",
-    "appdata": "null"
+    "funcion": "setappvolume",
+    "appdata": "chrome.exe"
   },
   {
     "nombre": "p2",
-    "funcion": "setappvolume",
+    "funcion": "setvolume",
+    "appdata": ""
+  },
+  {
+    "nombre": "p3",
+    "funcion": "setvolume",
+    "appdata": "Google.exe"
+  },
+  {
+    "nombre": "p2",
+    "funcion": "setvolume",
     "appdata": "Spotify.exe"
   },
   {
     "nombre": "p3",
-    "funcion": "setbrightnes",
+    "funcion": "setvolume",
     "appdata": "null"
   },
   {
     "nombre": "b1",
     "funcion": "mute",
-    "appdata": "null"
+    "appdata": "Youtube.exe"
   },
   {
     "nombre": "b2",
-    "funcion": "mutemic",
-    "appdata": "null"
+    "funcion": "mute",
+    "appdata": ""
   },
   {
     "nombre": "b3",
-    "funcion": "muteapp",
-    "appdata": "Spotify.exe"
+    "funcion": "mute",
+    "appdata": ""
   }
 ]

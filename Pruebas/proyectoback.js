@@ -5,8 +5,8 @@ import { exec } from 'child_process';
 import  fs  from 'fs';
 import {startServer,onEvent} from 'soquetic';
 
-/*const puerto=new SerialPort({path:'COM11',baudRate:9600});
-const parser = puerto.pipe(new ReadlineParser());*/
+const puerto=new SerialPort({path:'COM4',baudRate:9600});
+const parser = puerto.pipe(new ReadlineParser());
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const nirpath = join(__dirname,"/nircmd/nircmd.exe");
 
@@ -17,7 +17,7 @@ let funciones={
     setdevice:setdevice,
     setvolume:setvolume,
     setappvolume:setappvolume,
-    setbrightnes:setbrightnes,
+    setbrightness:setbrightness,
     takescreenshot:takescreenshot,
     zoom:zoom
 };
@@ -55,18 +55,18 @@ function setdevice(numP){
 let maxvolumen=65535;
 let maxpot=1023;
 function setvolume(numP){
-    let valorcomand=Number(Math.trunc((numP*maxvolumen)/maxpot));
+    let valorcomand=Number((numP*maxvolumen)/maxpot);
     let comand = nirpath+" setsysvolume "+valorcomand;
     exec(comand);
 };
-function setbrightnes(numP){
+function setbrightness(numP){
     let valorcomand=Number(Math.round((numP/maxpot)*100));
-    let comand=nirpath+" setbrigtness "+valorcomand;
+    let comand=nirpath+" setbrightness "+valorcomand;
     exec(comand);
 };
 
 function setappvolume(numP,app){
-    let valorcomand=Number(Math.round((numP/maxpot)*maxvolumen));
+    let valorcomand=Number((numP/maxpot)*1);
     let comand = nirpath+" setappvolume "+app+" "+valorcomand;
     exec(comand);
 };
@@ -76,15 +76,17 @@ function takescreenshot(numP){
         exec(comand); 
     };
 };
+let zoomstate=0;
 function zoom(numP){
     if(Math.round(zoomstate/100)<Math.round(numP/100)){
-        let comand= nirpath+"sendkeypress ctrl+plus";
+        let comand= nirpath+" sendkeypress ctrl+plus";
         exec(comand);
     };
     if(Math.round(zoomstate/100)>Math.round(numP/100)){
-        let comand= nirpath+"sendkeypress ctrl+minus";
+        let comand= nirpath+" sendkeypress ctrl+minus";
         exec(comand);
     };
+    zoomstate=numP;
 };
 function CategorizadorS(txt){
     let sensores=['a1','p1','p2','p3','b1','b2','b3'];
@@ -95,7 +97,7 @@ function CategorizadorS(txt){
             let Fc=JSON.parse(fs.readFileSync('data.json','utf-8'));
             for(let I=0;I<Fc.length;I++){
                 if(Fc[I].nombre===sensor){
-                    if(Fc[I].nombre.includes("app")){
+                    if(Fc[I].funcion==="setappvolume"||Fc[I].funcion==="muteapp"){
                         funciones[`${Fc[I].funcion}`](num,`${Fc[I].appdata}`);
                     }else{
                         funciones[`${Fc[I].funcion}`](num);
@@ -107,16 +109,16 @@ function CategorizadorS(txt){
 };
 
 
-/*parser.on('data',(data)=>{
+parser.on('data',(data)=>{
     let txt=data.toString();
     CategorizadorS(txt);
-});*/
+});
 onEvent("funciones",()=>{
     let sensores=JSON.parse(fs.readFileSync("data.json","utf-8"));
     return sensores;
 });
-onEvent("corregir",(correccion)=>{
-    fs.writeFileSync("data.json",JSON.stringify(correccion,null,2));
+onEvent("corregir",(correction)=>{
+    fs.writeFileSync("data.json",JSON.stringify(correction,null,2));
     return  "correción hecha";
 });
 onEvent("led",(ledata)=>{
