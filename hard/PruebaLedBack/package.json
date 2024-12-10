@@ -1,0 +1,14 @@
+{
+  "name": "prueba-prender-led-con-back-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "prueba prender led back.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "serialport": "^12.0.0"
+  }
+}
